@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RomConfig>
+    <RomName>Hackdroid</RomName>
+    <RomVersion>1.0.1</RomVersion>
+    <RomCheckUrl>http://win.acquariusoft.com/public/user/thehacker911/Hackdroid/update_me_ckeck.xml</RomCheckUrl>
+    <RomElemUrl>http://win.acquariusoft.com/public/user/thehacker911/Hackdroid/update_me_parts.xml</RomElemUrl>
+	<RebootType>0</RebootType><!-- 0 no install,1 install on cwm, 2 install openrecoveryscript -->
+	<DownloadDir>/mnt/sdcard/Hackdroid</DownloadDir> <!-- Optional defauld download dir,if you don't need not insert-->
+	<DisableInstalledApps>1</DisableInstalledApps> <!-- Not show installed app tab,if you don't need not insert-->
+	<DisableScripts>1</DisableScripts> <!-- Not show script tab,if you don't need not insert-->
+</RomConfig>
