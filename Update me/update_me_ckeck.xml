@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Version>
+	<Code>1.0.0</Code>
+	<Desc>Hackdroid</Desc>
+	<Url>https://play.google.com/store/apps/details?id=com.dustinb.theme.purplekush</Url>
+	<HomepageUrl>http://www.hackerromteam.de</HomepageUrl>
+  <CheckMD5>1</CheckMD5>
+  <MD5>57FAF9282A5493A4800E939CCE417A6F</MD5> <!-- the md5 of file, delete tag if don't use -->
+      
+  <RebootRecovery>1</RebootRecovery>
+  
+</Version>
