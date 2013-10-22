@@ -1,0 +1,3 @@
+post-build=samsung/jfltetmo/jfltetmo:4.2.2/JDQ39/M919UVUAMDB:user/release-keys
+post-timestamp=1382053737
+pre-device=jfltetmo
