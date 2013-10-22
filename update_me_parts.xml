@@ -1,0 +1,237 @@
+<Elements>
+<!-- Hackdroid OTA -->
+<Tab>
+<!-- Video Tutorials -->
+<Name>Video Tutorials</Name>
+<!-- name of tag -->
+<IconNum>2</IconNum>
+<!-- the icon -->
+<Element>
+<Name>DropDown</Name>
+<Desc>Set DropDown Icon</Desc>
+<Url>
+https://www.dropbox.com/s/4ptavhpvla7ftks/Set%20DropDown%20Icon.mp4
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+</Tab>
+<Tab>
+<!-- Themes -->
+<Name>Themes</Name>
+<!-- name of tag -->
+<IconNum>0</IconNum>
+<!-- the icon -->
+<Element>
+<Name>Cobalt - Theme</Name>
+<Desc>Cobalt - CM9/CM10 Theme</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.dustinb.theme.cobalt
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>Crimson Cobalt - Theme</Name>
+<Desc>Crimson Cobalt - CM9/CM10 Theme</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.dustinb.theme.crimsoncobalt
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>Royal Blue Cobalt - Theme</Name>
+<Desc>Royal Blue Cobalt - CM9/CM10 Theme</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.dustinb.theme.royalbluecobalt
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>Cobalt Inferno - Theme</Name>
+<Desc>Cobalt Inferno - CM9/CM10 Theme</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.dustinb.theme.cobaltinferno
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>Gunmetal Cobalt - Theme</Name>
+<Desc>Gunmetal Cobalt - CM9/CM10 Theme</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.dustinb.theme.gunmetalcobalt
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>Kiwi Cobalt - Theme</Name>
+<Desc>Kiwi Cobalt - CM9/CM10 Theme</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.dustinb.theme.kiwicobalt
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>Purple Kush - Theme</Name>
+<Desc>Purple Kush - CM9/CM10 Theme</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.dustinb.theme.purplekush
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>Cotton Candy Cobalt - Theme</Name>
+<Desc>Cotton Candy Cobalt - CM9/CM10 Theme</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.dustinb.theme.cottoncandycobalt
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+</Tab>
+<Tab>
+<!-- Launcher -->
+<Name>Launcher</Name>
+<!-- name of tag -->
+<IconNum>11</IconNum>
+<!-- the icon -->
+<Element>
+<Name>ADW.Launcher</Name>
+<Desc>ADW.Launcher</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=org.adw.launcher
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>Apex Launcher</Name>
+<Desc>Apex Launcher</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.anddoes.launcher
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>Nova Launcher</Name>
+<Desc>Nova Launcher</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>Smart Launcher</Name>
+<Desc>Smart Launcher</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=ginlemon.flowerfree
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+</Tab>
+<Tab>
+<!-- Datei Explorer -->
+<Name>Datei Explorer</Name>
+<!-- name of tag -->
+<IconNum>10</IconNum>
+<!-- the icon -->
+<Element>
+<Name>ES Datei Explorer</Name>
+<Desc>ES Datei Explorer</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.estrongs.android.pop
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>OI File Manager</Name>
+<Desc>OI File Manager</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=org.openintents.filemanager
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>Root Explorer</Name>
+<Desc>Root Explorer</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.speedsoftware.rootexplorer
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>Root Browser</Name>
+<Desc>Root Browser</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.jrummy.root.browserfree
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>Solid Explorer (Trial)</Name>
+<Desc>Solid Explorer (Trial)</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=pl.solidexplorer
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+</Tab>
+<Tab>
+<!-- Benchmarks -->
+<Name>Benchmarks</Name>
+<!-- name of tag -->
+<IconNum>9</IconNum>
+<!-- the icon -->
+<Element>
+<Name>AnTuTu Benchmark</Name>
+<Desc>AnTuTu Benchmark</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.antutu.ABenchMark
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>AnTuTu Benchmark X Editor</Name>
+<Desc>AnTuTu Benchmark X Editor</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.pctvtv.android.ttsx
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>CPU Prime Benchmark</Name>
+<Desc>CPU Prime Benchmark</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.obkircherlukas.cpuprimebenchmark
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+<Element>
+<Name>Quadrant Standard Edition</Name>
+<Desc>Quadrant Standard Edition</Desc>
+<Url>
+https://play.google.com/store/apps/details?id=com.aurorasoftworks.quadrant.ui.standard
+</Url>
+<ExternalLink>1</ExternalLink>
+<RebootRecovery>0</RebootRecovery>
+</Element>
+</Tab>
+</Elements>
+<!-- Hackdroid OTA -->
