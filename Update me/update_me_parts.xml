@@ -173,6 +173,49 @@
 			<ExternalLink>1</ExternalLink>
 			<RebootRecovery>0</RebootRecovery>
        </Element>    	   
-  </Tab>   
+  </Tab>
+   <Tab><!-- Kamera  (Thanks chris264) -->
+	   <Name>Kamera Apps</Name>
+	   <IconNum>8</IconNum>
+	   <Element>
+			<Name>Snap Camera HDR</Name>
+			<Desc>Snap Camera HDR (1,49€)</Desc>
+			<Url>https://play.google.com/store/apps/details?id=com.marginz.snap</Url>
+			<ExternalLink>1</ExternalLink>
+			<RebootRecovery>0</RebootRecovery>
+	   </Element>
+	   <Element>
+			<Name>Camera ZOOM FX Picture Frames</Name>
+			<Desc>Camera ZOOM FX Picture Frames</Desc>
+			<Url>https://play.google.com/store/apps/details?id=slide.cameraZoom.pictureframes</Url>
+			<ExternalLink>1</ExternalLink>
+			<RebootRecovery>0</RebootRecovery>
+	   </Element>
+       <Element>
+			<Name>FxCamera</Name>
+			<Desc>FxCamera</Desc>
+			<Url>https://play.google.com/store/apps/details?id=ymst.android.fxcamera</Url>
+			<ExternalLink>1</ExternalLink>
+			<RebootRecovery>0</RebootRecovery>
+	   </Element>
+	   <Element>
+			<Name>Camera360 Ultimate</Name>
+			<Desc>Camera360 Ultimate</Desc>
+			<Url>https://play.google.com/store/apps/details?id=vStudio.Android.Camera360</Url>
+			<ExternalLink>1</ExternalLink>
+			<RebootRecovery>0</RebootRecovery>
+	   </Element>
+   </Tab>
+   <Tab><!-- Sound -->
+	   <Name>Sound Mods</Name>
+	   <IconNum>7</IconNum> 
+	   <Element>
+			<Name>Viper Sound Mod</Name>
+			<Desc>Viper Sound Mod</Desc>
+			<Url>https://www.dropbox.com/sh/9v3mit16x4phmwv/N4_tlCpA_5</Url>
+			<ExternalLink>1</ExternalLink>
+			<RebootRecovery>0</RebootRecovery>
+	   </Element>
+   </Tab>	  
 </Elements>
 <!-- Hackdroid OTA -->
