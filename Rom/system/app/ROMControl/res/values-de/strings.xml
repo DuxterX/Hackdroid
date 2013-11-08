@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">ROM Control</string>
     <string name="user_interface">Benutzeroberfläche</string>
-    <string name="toggles_layout">Schalter</string>
+    <string name="toggles_layout">Toggles</string>
     <string name="general_ui">Allgemein</string>
     <string name="clock">Uhr</string>
     <string name="battery">Batterie</string>
@@ -13,7 +13,7 @@
     <string name="weather">Wetter</string>
     <string name="tools">Tools</string>
     <string name="header_summary_clock">Uhr Position, AM/PM anzeigen, Farbe</string>
-    <string name="header_summary_toggles">Schalter anpassen</string>
+    <string name="header_summary_toggles">Toggles anpassen</string>
     <string name="header_summary_general_ui">Boot Animation, Fehlerberichte, Rotation, Eingabemethoden etc.</string>
     <string name="header_summary_battery">Batterie-Leiste, 1 % Batterie Mod etc.</string>
     <string name="header_summary_signal">Empfangs Text (dBm)</string>
@@ -39,7 +39,7 @@
     <string name="use_custom_app_summary">Benutzerdefinierte App statt Dialog mit den zuletzt verwendeten Apps verwenden.</string>
     <string name="select_custom_app_title">Benutzerdefinierte App wählen</string>
     <string name="group_applications">Apps</string>
-    <string name="devs">Entwickler</string>
+    <string name="devs">Entwickler Hackdroid</string>
     <string name="aokp_website_title">AOKP Webseite</string>
     <string name="aokp_irc_title">Tritt unserem IRC-Channel bei</string>
     <string name="about_aokp">Über AOKP</string>
@@ -418,5 +418,5 @@ Aktuell: %s"</string>
     <string name="color_red_title">Rot</string>
     <string name="color_green_title">Grün</string>
     <string name="color_blue_title">Blau</string>
-    <string name="reset_defaults">Auf Standard zurücksetzten</string>
+    <string name="reset_defaults">Auf Standard zurücksetzten</string>	
 </resources>

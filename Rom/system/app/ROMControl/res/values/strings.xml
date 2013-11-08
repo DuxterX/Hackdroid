@@ -97,7 +97,7 @@
     <string name="title_show_power_saver">Power Saver</string>
     <string name="title_show_screenshot">Screenshot</string>
     <string name="title_show_torch_toggle">Torch</string>
-    <string name="title_show_airplane_toggle">Airplane mode</string>
+    <string name="title_show_airplane_toggle">Flugmodus</string>
     <string name="title_show_navbar_hide">System Bar toggles</string>
     <string name="title_show_volume_state_toggle">Volume states</string>
     <string name="title_show_reboot_keyguard">Lockscreen reboot</string>
@@ -140,8 +140,8 @@
     <string name="aokp_irc_summary">\#teamkang @ irc.freenode.net</string>
     <string name="about_aokp">About AOKP</string>
     <string name="about_aokp_summary">@null</string>
-    <string name="donate_aokp">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=DBBCGTVJ984YG</string>
-    <string name="github_aokp">https://github.com/AOKP</string>
+    <string name="donate_aokp">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=ZS4VRKTFR4G9U</string>
+    <string name="github_aokp">https://github.com/thehacker911</string>
     <string name="github_adam">https://github.com/syaoran12</string>
     <string name="github_akellar">https://github.com/akellar</string>
     <string name="github_bajee11">https://github.com/Bajee11</string>
@@ -287,13 +287,13 @@
         encounter market app incompatibility please return here and restart the process from step 1."</string>
     <string name="custom_density_dialog_button_got">Got it!</string>
     <string name="custom_density_dialog_button_reboot">Reboot now</string>
-    <string name="toggle_style_title">Toggle style</string>
+    <string name="toggle_style_title">Toggle Stil</string>
     <string name="toggle_style_summary">Whether to show icons or text on your toggles.</string>
     <string name="toggles_layout_title">Toggle layout</string>
     <string name="toggles_per_row_title">Toggles per row</string>
     <string name="toggles_per_row_summary">Choose how many toggles to show per row</string>
-    <string name="toggles_style_title">Toggle style</string>
-    <string name="toggles_style_summary">Tiles, traditional, or scrollable</string>
+    <string name="toggles_style_title">Toggle Stil</string>
+    <string name="toggles_style_summary">Fliesen, traditionell, oder scrollbar</string>
     <string name="toggles_display_close">Close</string>
     <string name="toggles_order_title">Toggle order</string>
     <string name="toggles_order_summary">Choose the order in which your toggles are displayed</string>
@@ -326,7 +326,7 @@
     <string name="toggle_style_traditional">Traditional</string>
     <string name="toggle_style_scrollable">Scrollable</string>
     <string name="toggle_swap_handle_side">Drag handle on right</string>
-    <string name="add_toggles">Change toggles</string>
+    <string name="add_toggles">Toggles ändern</string>
     <string name="screenshot_delay_title">Screenshot delay</string>
     <string name="screenshot_delay_summary">Delay to use after longpressing the screenshot toggle</string>
     <string name="toggle_action_title">Action %1$s &amp; icon</string>
@@ -374,10 +374,10 @@ This is useful for users who want their click actions to simply cycle through to
     <string name="title_clock_doubleclick">Clock double click actions</string>
     <string name="title_clock_longclick">Clock long click actions</string>
     <string name="title_clock_shortclick">Clock short click actions</string>
-    <string name="toggle_airplane_mode">Airplane Mode</string>
+    <string name="toggle_airplane_mode">Flugmodus</string>
     <string name="toggle_auto_rotate">Auto Rotate</string>
     <string name="toggle_bluetooth">Bluetooth</string>
-    <string name="toggle_fcharge">Fast Charge</string>
+    <string name="toggle_fcharge">Schnell Laden</string>
     <string name="toggle_gps">GPS</string>
     <string name="toggle_lte">LTE</string>
     <string name="toggle_data">Data</string>
@@ -393,13 +393,13 @@ This is useful for users who want their click actions to simply cycle through to
     <string name="toggle_wifi_tether">Wifi Tether</string>
     <string name="toggle_wifi">Wi-Fi</string>
     <string name="toggle_user">User</string>
-    <string name="toggle_favorite_contact">Favorite Contact</string>
-    <string name="toggle_settings">Settings</string>
+    <string name="toggle_favorite_contact">Bevorzugter Kontakt</string>
+    <string name="toggle_settings">Einstellungen</string>
     <string name="toggle_signal">Signal</string>
-    <string name="toggle_clock">Clock</string>
+    <string name="toggle_clock">Uhr</string>
     <string name="toggle_ime">IME</string>
-    <string name="toggle_battery">Battery</string>
-    <string name="toggle_brightness">Brightness</string>
+    <string name="toggle_battery">Akkuanzeige</string>
+    <string name="toggle_brightness">Helligkeit</string>
     <string name="toggle_sound_state">Ring/Vib/Silent</string>
     <string name="toggle_navbar_hide">NavBar Auto Hide</string>
     <string name="toggle_quickrecord">Quick Record</string>
@@ -1014,4 +1014,5 @@ Examples: New York,NY // New York, NY // 10033 // London, England"</string>
     <string name="title_animation_no_override">Prevent App Overrides</string>
     <string name="summary_animation_no_override">Prevent apps from overriding transitions.</string>
     <string name="animation_duration_default">Default</string>
+	<string name="ota_center">OTA Center</string>
 </resources>
