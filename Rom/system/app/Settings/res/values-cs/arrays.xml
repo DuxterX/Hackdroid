@@ -200,10 +200,7 @@
         <item>Automaticky vybere systém</item>
     </string-array>
     <string-array name="app_ops_categories">
-        <item>Poloha</item>
-        <item>Osobní</item>
-        <item>SMS a MMS</item>
-        <item>Zařízení</item>
+        <item>Operace</item>
     </string-array>
     <string-array name="app_ops_summaries">
         <item>přibližná poloha</item>
@@ -365,5 +362,10 @@
         <item>Zeptat se</item>
         <item>Nepovolit nikdy</item>
         <item>Vždy povolit</item>
+    </string-array>
+    <string-array name="multi_sim_entries">
+        <item>Předplatné 1</item>
+        <item>Předplatné 2</item>
+        <item>Předplatné 3</item>
     </string-array>
 </resources>

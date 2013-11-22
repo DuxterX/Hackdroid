@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest android:sharedUserId="android.uid.system" android:versionCode="18" android:versionName="4.3.1-eng..20131018.014828" package="com.android.settings" coreApp="true"
+<manifest android:sharedUserId="android.uid.system" android:versionCode="18" android:versionName="4.3.1-eng..20131114.045542" package="com.android.settings" coreApp="true"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <original-package android:name="com.android.settings" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
@@ -192,13 +193,14 @@
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
             </intent-filter>
         </activity-alias>
-        <activity android:label="@string/apn_settings" android:name="ApnSettings" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" android:parentActivityName="Settings$WirelessSettingsActivity">
+        <activity android:label="@string/apn_settings" android:name="Settings$ApnSettingsActivity" android:clearTaskOnLaunch="true" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.settings.APN_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
             </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.ApnSettings" />
         </activity>
         <activity android:label="@string/bluetooth_settings_title" android:name="Settings$BluetoothSettingsActivity" android:taskAffinity="" android:excludeFromRecents="true" android:uiOptions="splitActionBarWhenNarrow">
             <intent-filter>
@@ -393,6 +395,15 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.DisplaySettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID" android:resource="@id/display_settings" />
         </activity-alias>
+        <activity android:label="@string/multi_sim_settings_title" android:name="MultiSimSettings" android:process="com.android.phone" android:clearTaskOnLaunch="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.settings.MULTI_SIM_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+        </activity>
         <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:label="@string/device_info_settings" android:name="Settings$DeviceInfoSettingsActivity" android:taskAffinity="com.android.settings" android:parentActivityName="Settings">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -484,11 +495,13 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.NotificationStation" />
         </activity>
-        <activity android:label="@string/app_ops_settings" android:name="Settings$AppOpsSummaryActivity" android:taskAffinity="" android:excludeFromRecents="true">
+        <activity android:label="@string/app_ops_settings" android:name="Settings$AppOpsSummaryActivity" android:taskAffinity="com.android.settings" android:excludeFromRecents="true" android:parentActivityName="Settings">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.settings.APP_OPS_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.settings.SHORTCUT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.applications.AppOpsSummary" />
         </activity>
@@ -599,6 +612,20 @@
         </activity>
         <activity android:name="ChooseLockPattern" android:exported="false" />
         <activity android:name="ChooseLockPassword" android:exported="false" android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:label="@string/device_status_activity_title" android:name=".deviceinfo.msim.MSimSubscriptionStatus" android:process="com.android.phone">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:label="@string/device_status_activity_title" android:name=".deviceinfo.msim.MSimStatus" android:process="com.android.phone">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
+        </activity>
         <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:label="@string/device_status_activity_title" android:name=".deviceinfo.Status" android:process="com.android.phone">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -618,7 +645,7 @@
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID" android:resource="@id/storage_settings" />
         </activity>
         <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:name=".deviceinfo.MiscFilesHandler" />
-        <activity android:label="@string/apn_edit" android:name="ApnEditor">
+        <activity android:label="@string/apn_edit" android:name="Settings$ApnEditorActivity" android:clearTaskOnLaunch="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.EDIT" />
@@ -630,6 +657,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="vnd.android.cursor.dir/telephony-carrier" />
             </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.ApnEditor" />
         </activity>
         <activity android:label="@string/media_format_title" android:name="MediaFormat">
             <intent-filter>
@@ -890,6 +918,7 @@
         <activity android:theme="@style/CryptKeeperBlankTheme" android:name=".CryptKeeper$FadeToBlack" android:launchMode="singleTop" android:immersive="true" />
         <activity android:theme="@style/CryptKeeperBlankTheme" android:name=".CryptKeeperConfirm$Blank" android:launchMode="singleTop" android:immersive="true" />
         <activity android:theme="@*android:style/Theme.Holo.Dialog.Alert" android:name=".AutoBrightnessSetup" android:excludeFromRecents="true" />
+        <activity android:name=".ApnEditor" />
         <activity android:label="@string/crypt_keeper_encrypt_title" android:name="Settings$CryptKeeperSettingsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -910,6 +939,13 @@
         </activity>
         <activity android:label="@string/anonymous_statistics_title" android:name="Settings$AnonymousStatsActivity" android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.aokpstats.AnonymousStats" />
+        </activity>
+        <activity android:label="@string/subs_settings" android:name=".SelectSubscription" android:process="com.android.phone" android:clearTaskOnLaunch="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
         </activity>
         <activity android:label="@string/screensaver_settings_title" android:name="Settings$DreamSettingsActivity" android:taskAffinity="" android:excludeFromRecents="true" android:uiOptions="splitActionBarWhenNarrow">
             <intent-filter>

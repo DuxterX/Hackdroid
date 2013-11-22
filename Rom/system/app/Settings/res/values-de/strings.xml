@@ -1898,4 +1898,6 @@ Jeder Nutzer kann aktualisierte App-Berechtigungen im Namen aller anderen Nutzer
     <string name="regulatory_info_text" />
     <string name="show_dev_on">Sie sind jetzt ein Entwickler!</string>
     <string name="show_dev_already">Okay, sind Sie bereits ein Entwickler.</string>
+    <string name="mod_version">Hackdroid Version</string>
+    <string name="rom_control_title">Hackdroid ROM Control</string>
 </resources>

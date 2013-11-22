@@ -73,18 +73,6 @@
     return-object v0
 .end method
 
-.method public onAbsorb(Ljava/lang/Object;I)Z
-    .locals 1
-    .parameter "edgeEffect"
-    .parameter "velocity"
-
-    .prologue
-    .line 82
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
 .method public onPull(Ljava/lang/Object;F)Z
     .locals 1
     .parameter "edgeEffect"

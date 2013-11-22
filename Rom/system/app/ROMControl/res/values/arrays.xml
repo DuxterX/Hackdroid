@@ -1,900 +1,700 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="disable_bootanimation_insults">
-        <item>@string/insult_jerk</item>
-        <item>@string/insult_protekk</item>
-        <item>@string/insult_unicorns</item>
-    </string-array>
-    <string-array name="clock_style_entries">
-        <item>@string/right_clock</item>
-        <item>@string/center_clock</item>
-        <item>@string/no_clock</item>
-    </string-array>
-    <string-array name="clock_style_values">
-        <item>1</item>
-        <item>2</item>
-        <item>0</item>
-    </string-array>
-    <string-array name="clock_ampm_entries">
-        <item>@string/dont_show</item>
-        <item>@string/small_am_pm</item>
-        <item>@string/regular_am_pm</item>
-    </string-array>
-    <string-array name="clock_ampm_values">
-        <item>2</item>
-        <item>1</item>
-        <item>0</item>
-    </string-array>
-    <string-array name="clock_weekday_entries">
-        <item>@string/dont_show</item>
-        <item>@string/small_weekday</item>
-        <item>@string/regular_weekday</item>
-    </string-array>
-    <string-array name="clock_weekday_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-    <string-array name="toggle_style_entries">
-        <item>@string/icon_only</item>
-        <item>@string/text_only</item>
-    </string-array>
-    <string-array name="toggle_style_values">
-        <item>2</item>
-        <item>3</item>
-    </string-array>
-    <array name="toggles_layout_images">
-        <item>@drawable/toggle_layout_switches</item>
-        <item>@drawable/toggle_layout_buttons</item>
-    </array>
-    <string-array name="toggles_layout_entries">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="available_toggles_entries">
-        <item>USER</item>
-        <item>FAVCONTACT</item>
-        <item>BRIGHTNESS</item>
-        <item>SETTINGS</item>
-        <item>WIFI</item>
-        <item>SIGNAL</item>
-        <item>ROTATE</item>
-        <item>CLOCK</item>
-        <item>GPS</item>
-        <item>IME</item>
-        <item>BATTERY</item>
-        <item>AIRPLANE_MODE</item>
-        <item>BLUETOOTH</item>
-        <item>SWAGGER</item>
-        <item>VIBRATE</item>
-        <item>SILENT</item>
-        <item>SOUNDSTATE</item>
-        <item>SYNC</item>
-        <item>FCHARGE</item>
-        <item>NFC</item>
-        <item>WIFITETHER</item>
-        <item>USBTETHER</item>
-        <item>TORCH</item>
-        <item>STATUSBAR</item>
-        <item>2G</item>
-        <item>LTE</item>
-        <item>NAVBARHIDE</item>
-        <item>QUICKRECORD</item>
-    </string-array>
-    <string-array name="available_toggles_values">
-        <item>@string/toggle_user</item>
-        <item>@string/toggle_favorite_contact</item>
-        <item>@string/toggle_brightness</item>
-        <item>@string/toggle_settings</item>
-        <item>@string/toggle_wifi</item>
-        <item>@string/toggle_signal</item>
-        <item>@string/toggle_auto_rotate</item>
-        <item>@string/toggle_clock</item>
-        <item>@string/toggle_gps</item>
-        <item>@string/toggle_ime</item>
-        <item>@string/toggle_battery</item>
-        <item>@string/toggle_airplane_mode</item>
-        <item>@string/toggle_bluetooth</item>
-        <item>@string/toggle_swagger</item>
-        <item>@string/toggle_vibrate</item>
-        <item>@string/toggle_silent</item>
-        <item>@string/toggle_sound_state</item>
-        <item>@string/toggle_sync</item>
-        <item>@string/toggle_fcharge</item>
-        <item>@string/toggle_nfc</item>
-        <item>@string/toggle_wifi_tether</item>
-        <item>@string/toggle_usb_tether</item>
-        <item>@string/toggle_torch</item>
-        <item>@string/toggle_statusbar</item>
-        <item>@string/toggle_2g</item>
-        <item>@string/toggle_lte</item>
-        <item>@string/toggle_navbar_hide</item>
-        <item>@string/toggle_quickrecord</item>
-    </string-array>
-    <string-array name="toggles_per_row_entries">
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-    </string-array>
-    <string-array name="toggles_per_row_values">
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-    </string-array>
-    <string-array name="toggles_style_entries">
-        <item>@string/toggle_style_tile</item>
-        <item>@string/toggle_style_traditional</item>
-        <item>@string/toggle_style_scrollable</item>
-    </string-array>
-    <string-array name="toggles_style_values">
-        <item>0</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
-    <string-array name="screenshot_delay_entries">
-        <item>@string/time_2_seconds</item>
-        <item>@string/time_3_seconds</item>
-        <item>@string/time_4_seconds</item>
-        <item>@string/time_5_seconds</item>
-        <item>@string/time_6_seconds</item>
-        <item>@string/time_7_seconds</item>
-        <item>@string/time_8_seconds</item>
-    </string-array>
-    <string-array name="screenshot_delay_values">
-        <item>2000</item>
-        <item>3000</item>
-        <item>4000</item>
-        <item>5000</item>
-        <item>6000</item>
-        <item>7000</item>
-        <item>8000</item>
-    </string-array>
-    <string-array name="custom_toggle_qty_entries">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-    </string-array>
-    <string-array name="custom_toggle_qty_values">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-    </string-array>
-    <string-array name="collapse_bar_entries">
-        <item>@string/no_collapse</item>
-        <item>@string/click_collapse</item>
-        <item>@string/long_collapse</item>
-        <item>@string/both_collapse</item>
-    </string-array>
-    <string-array name="collapse_bar_values">
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-        <item>13</item>
-    </string-array>
-    <string-array name="custom_toggle_dclick_entries">
-        <item>@string/no_dclick</item>
-        <item>@string/back_one_dclick</item>
-        <item>@string/state_one_dclick</item>
-        <item>@string/skip_back_dclick</item>
-        <item>@string/skip_up_dclick</item>
-    </string-array>
-    <string-array name="custom_toggle_dclick_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-    <string-array name="brightness_location_entries">
-        <item>@string/on_top</item>
-        <item>@string/on_the_bottom</item>
-        <item>@string/dont_show</item>
-    </string-array>
-    <string-array name="brightness_location_values">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
-    <string-array name="battery_icon_entries">
-        <item>@string/icon_only</item>
-        <item>@string/text_only</item>
-        <item>@string/icon_with_text</item>
-        <item>@string/icon_with_centered_text</item>
-        <item>@string/circlemod</item>
-        <item>@string/dont_show</item>
-    </string-array>
-    <string-array name="battery_icon_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-    </string-array>
-    <string-array name="pref_navigation_menu_entries">
-        <item>@string/right</item>
-        <item>@string/left</item>
-        <item>@string/both</item>
-        <item>@string/dont_show</item>
-    </string-array>
-    <string-array name="pref_navigation_menu_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>4</item>
-    </string-array>
-    <string-array name="pref_navigation_menu_display_entries">
-        <item>@string/default_jb_behavior</item>
-        <item>@string/always_show_invincible_icons</item>
-        <item>@string/always_show</item>
-        <item>@string/default_jb_with_invincible_icons_when_hidden</item>
-    </string-array>
-    <string-array name="pref_navigation_menu_display_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
-    <string-array name="ribbon_dialog_entries">
-        <item>@string/navring_short</item>
-        <item>@string/navring_long</item>
-        <item>@string/navring_icon</item>
-        <item>@string/ribbon_insert</item>
-        <item>@string/navbar_delete_menu</item>
-    </string-array>
-    <string-array name="ribbon_dialog_values">
-        <item>**short**</item>
-        <item>**long**</item>
-        <item>**icon**</item>
-        <item>**insert**</item>
-        <item>**remove**</item>
-    </string-array>
-    <string-array name="ribbon_chooser_entries">
-        <item>@string/ribbon_lockscreen</item>
-        <item>@string/ribbon_notifications</item>
-        <item>@string/ribbon_quicksettings</item>
-        <item>@string/ribbon_swipe_left</item>
-        <item>@string/ribbon_swipe_right</item>
-        <item>@string/ribbon_swipe_bottom</item>
-        <item>@string/app_window</item>
-    </string-array>
-    <string-array name="ribbon_chooser_values">
-        <item>0</item>
-        <item>1</item>
-        <item>3</item>
-        <item>2</item>
-        <item>4</item>
-        <item>5</item>
-        <item>10</item>
-    </string-array>
-    <string-array name="navring_long_dialog_entries">
-        <item>@string/navring_short</item>
-        <item>@string/navring_long</item>
-        <item>@string/navring_icon</item>
-    </string-array>
-    <string-array name="navring_long_dialog_values">
-        <item>**short**</item>
-        <item>**long**</item>
-        <item>**icon**</item>
-    </string-array>
-    <string-array name="navring_short_dialog_entries">
-        <item>@string/navring_short</item>
-        <item>@string/navring_icon</item>
-    </string-array>
-    <string-array name="navring_short_dialog_values">
-        <item>**short**</item>
-        <item>**icon**</item>
-    </string-array>
-    <string-array name="pref_navring_amount_entries">
-        <item>@string/one_target</item>
-        <item>@string/two_targets</item>
-        <item>@string/three_targets</item>
-        <item>@string/four_targets</item>
-        <item>@string/five_targets</item>
-    </string-array>
-    <string-array name="pref_navring_amount_values">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-    </string-array>
-    <string-array name="navigation_bar_width_entries">
-        <item>@string/size_42_dp_default</item>
-        <item>@string/size_40_dp</item>
-        <item>@string/size_36_dp</item>
-        <item>@string/size_30_dp</item>
-        <item>@string/size_24_dp</item>
-        <item>@string/size_0_dp</item>
-    </string-array>
-    <string-array name="navigation_bar_width">
-        <item>42</item>
-        <item>40</item>
-        <item>36</item>
-        <item>30</item>
-        <item>24</item>
-        <item>0</item>
-    </string-array>
-    <string-array name="navigation_bar_height_entries">
-        <item>@string/size_48_dp_default</item>
-        <item>@string/size_44_dp</item>
-        <item>@string/size_42_dp</item>
-        <item>@string/size_40_dp</item>
-        <item>@string/size_36_dp</item>
-        <item>@string/size_30_dp</item>
-        <item>@string/size_24_dp</item>
-        <item>@string/size_0_dp</item>
-    </string-array>
-    <string-array name="navigation_bar_height">
-        <item>48</item>
-        <item>44</item>
-        <item>42</item>
-        <item>40</item>
-        <item>36</item>
-        <item>30</item>
-        <item>24</item>
-        <item>0</item>
-    </string-array>
-    <string-array name="navigation_bar_height_landscape_entries">
-        <item>@string/size_48_dp_default</item>
-        <item>@string/size_44_dp</item>
-        <item>@string/size_42_dp</item>
-        <item>@string/size_40_dp</item>
-        <item>@string/size_36_dp</item>
-        <item>@string/size_30_dp</item>
-        <item>@string/size_24_dp</item>
-        <item>@string/size_0_dp</item>
-    </string-array>
-    <string-array name="navigation_bar_height_landscape">
-        <item>48</item>
-        <item>44</item>
-        <item>42</item>
-        <item>40</item>
-        <item>36</item>
-        <item>30</item>
-        <item>24</item>
-        <item>0</item>
-    </string-array>
-    <string-array name="glow_times_entries">
-        <item>@string/glow_times_off</item>
-        <item>@string/glow_times_superquick</item>
-        <item>@string/glow_times_quick</item>
-        <item>@string/glow_times_normal</item>
-    </string-array>
-    <string-array name="glow_times_values">
-        <item>0|0</item>
-        <item>100|10</item>
-        <item>250|25</item>
-        <item>500|50</item>
-    </string-array>
-    <string-array name="battery_bar_entries">
-        <item>@string/dont_show</item>
-        <item>@string/statusbar</item>
-        <item>@string/top_of_navbar</item>
-        <item>@string/bottom_of_navbar</item>
-    </string-array>
-    <string-array name="battery_bar_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
-    <string-array name="battery_bar_alt_entries">
-        <item>@string/dont_show</item>
-        <item>@string/statusbar</item>
-    </string-array>
-    <string-array name="battery_bar_alt_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="battery_bar_style_entries">
-        <item>@string/regular</item>
-        <item>@string/center_mirrored</item>
-    </string-array>
-    <string-array name="battery_bar_style_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="battery_bar_thickness_entries">
-        <item>@string/size_1_dp</item>
-        <item>@string/size_2_dp</item>
-        <item>@string/size_3_dp</item>
-        <item>@string/size_4_dp</item>
-    </string-array>
-    <string-array name="battery_bar_thickness_values">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-    <string-array name="led_entries">
-        <item>@string/time_0_seconds_off</item>
-        <item>@string/time_0_2_seconds</item>
-        <item>@string/time_0_5_seconds</item>
-        <item>@string/time_1_second</item>
-        <item>@string/time_1_5_seconds</item>
-        <item>@string/time_2_seconds</item>
-        <item>@string/time_2_5_seconds</item>
-        <item>@string/time_3_seconds</item>
-        <item>@string/time_3_5_seconds</item>
-        <item>@string/time_4_seconds</item>
-        <item>@string/time_4_5_seconds</item>
-        <item>@string/time_5_seconds</item>
-        <item>@string/time_5_5_seconds</item>
-        <item>@string/time_6_seconds</item>
-        <item>@string/time_7_seconds</item>
-        <item>@string/time_8_seconds</item>
-        <item>@string/time_9_seconds</item>
-        <item>@string/time_10_seconds</item>
-    </string-array>
-    <integer-array name="led_values">
-        <item>0</item>
-        <item>200</item>
-        <item>500</item>
-        <item>1000</item>
-        <item>1500</item>
-        <item>2000</item>
-        <item>2500</item>
-        <item>3000</item>
-        <item>3500</item>
-        <item>4000</item>
-        <item>4500</item>
-        <item>5000</item>
-        <item>5500</item>
-        <item>6000</item>
-        <item>7000</item>
-        <item>8000</item>
-        <item>9000</item>
-        <item>10000</item>
-    </integer-array>
-    <string-array name="led_brightness_entries">
-        <item>@string/low</item>
-        <item>@string/medium</item>
-        <item>@string/high</item>
-        <item>@string/very_high</item>
-        <item>@string/laserbeam</item>
-    </string-array>
-    <integer-array name="led_brightness_values">
-        <item>10</item>
-        <item>31</item>
-        <item>60</item>
-        <item>90</item>
-        <item>127</item>
-    </integer-array>
-    <string-array name="headphone_audio_mode_entries">
-        <item>@string/headphones_mode_no_action</item>
-        <item>@string/headphones_mode_vibrate</item>
-        <item>@string/headphones_mode_silent</item>
-    </string-array>
-    <string-array name="headphone_audio_mode_values">
-        <item>-1</item>
-        <item>1</item>
-        <item>0</item>
-    </string-array>
-    <string-array name="phone_call_flip_entries">
-        <item>@string/disabled</item>
-        <item>@string/enabled</item>
-    </string-array>
-    <string-array name="phone_call_flip_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="flip_entries">
-        <item>@string/time_0_5_seconds</item>
-        <item>@string/time_1_second</item>
-        <item>@string/time_1_5_seconds</item>
-        <item>@string/time_2_seconds</item>
-        <item>@string/time_2_5_seconds</item>
-        <item>@string/time_3_seconds</item>
-        <item>@string/time_3_5_seconds</item>
-        <item>@string/time_4_seconds</item>
-        <item>@string/time_4_5_seconds</item>
-        <item>@string/time_5_seconds</item>
-        <item>@string/time_5_5_seconds</item>
-        <item>@string/time_6_seconds</item>
-        <item>@string/time_7_seconds</item>
-        <item>@string/time_8_seconds</item>
-        <item>@string/time_9_seconds</item>
-        <item>@string/time_10_seconds</item>
-    </string-array>
-    <string-array name="flip_values">
-        <item>500</item>
-        <item>1000</item>
-        <item>1500</item>
-        <item>2000</item>
-        <item>2500</item>
-        <item>3000</item>
-        <item>3500</item>
-        <item>4000</item>
-        <item>4500</item>
-        <item>5000</item>
-        <item>5500</item>
-        <item>6000</item>
-        <item>7000</item>
-        <item>8000</item>
-        <item>9000</item>
-        <item>10000</item>
-    </string-array>
-    <string-array name="flip_screenoff_entries">
-        <item>@string/time_0_seconds_instant_off</item>
-        <item>@string/time_5_seconds</item>
-        <item>@string/time_10_seconds</item>
-        <item>@string/time_15_seconds</item>
-        <item>@string/time_30_seconds</item>
-        <item>@string/time_45_seconds</item>
-        <item>@string/time_1_minute</item>
-        <item>@string/time_1_5_minutes</item>
-        <item>@string/time_2_minutes</item>
-        <item>@string/time_2_5_minutes</item>
-        <item>@string/time_3_minutes</item>
-        <item>@string/time_3_5_minutes</item>
-        <item>@string/time_4_minutes</item>
-        <item>@string/time_5_minutes</item>
-    </string-array>
-    <string-array name="flip_screenoff_values">
-        <item>0</item>
-        <item>5000</item>
-        <item>10000</item>
+    <string-array name="timezone_filters">
+        <item>America</item>
+        <item>Europe</item>
+        <item>Africa</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Pacific</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="date_format_values">
+        <item></item>
+        <item>MM-dd-yyyy</item>
+        <item>dd-MM-yyyy</item>
+        <item>yyyy-MM-dd</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+    <string-array name="screen_timeout_values">
         <item>15000</item>
         <item>30000</item>
-        <item>45000</item>
         <item>60000</item>
-        <item>90000</item>
         <item>120000</item>
-        <item>150000</item>
-        <item>180000</item>
-        <item>210000</item>
-        <item>240000</item>
         <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
     </string-array>
-    <string-array name="weather_interval_entries">
-        <item>@string/off</item>
-        <item>@string/time_1_minute</item>
-        <item>@string/time_5_minutes</item>
-        <item>@string/time_10_minutes</item>
-        <item>@string/time_30_minutes</item>
-        <item>@string/time_45_minutes</item>
-        <item>@string/time_60_minutes</item>
-        <item>@string/time_2_hours</item>
-        <item>@string/time_3_hours</item>
-        <item>@string/time_4_hours</item>
-        <item>@string/time_6_hours</item>
-        <item>@string/time_8_hours</item>
+    <string-array name="dream_timeout_entries">
+        <item>Never</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
     </string-array>
-    <string-array name="weather_interval_values">
+    <string-array name="dream_timeout_values">
         <item>0</item>
-        <item>1</item>
-        <item>5</item>
-        <item>10</item>
-        <item>30</item>
-        <item>45</item>
-        <item>60</item>
-        <item>120</item>
-        <item>180</item>
-        <item>240</item>
-        <item>360</item>
-        <item>480</item>
-    </string-array>
-    <string-array name="weather_statusbar_location_entries">
-        <item>@string/above_carrier_text</item>
-        <item>@string/weather_panel</item>
-        <item>@string/disabled</item>
-    </string-array>
-    <string-array name="weather_statusbar_location_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-    <string-array name="weather_statusbar_hide_entries">
-        <item>@string/always_on</item>
-        <item>@string/same_toggles</item>
-        <item>@string/opposite_toggles</item>
-    </string-array>
-    <string-array name="weather_statusbar_hide_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-    <string-array name="pref_lockscreen_weather_type_entries">
-        <item>@string/weather_panel</item>
-        <item>@string/text</item>
-    </string-array>
-    <string-array name="pref_lockscreen_weather_type_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="pref_lockscreen_calendar_interval_values">
-        <item>1000</item>
-        <item>1500</item>
-        <item>2000</item>
-        <item>2500</item>
-        <item>3000</item>
-        <item>3500</item>
-        <item>4000</item>
-    </string-array>
-    <string-array name="pref_lockscreen_calendar_interval_entries">
-        <item>@string/time_1_second</item>
-        <item>@string/time_1_5_seconds</item>
-        <item>@string/time_2_seconds</item>
-        <item>@string/time_2_5_seconds</item>
-        <item>@string/time_3_seconds</item>
-        <item>@string/time_3_5_seconds</item>
-        <item>@string/time_4_seconds</item>
-    </string-array>
-    <string-array name="pref_lockscreen_calendar_range_values">
-        <item>86400000</item>
-        <item>172800000</item>
-        <item>259200000</item>
-        <item>345600000</item>
-        <item>432000000</item>
-        <item>518400000</item>
-        <item>604800000</item>
-    </string-array>
-    <string-array name="pref_lockscreen_calendar_range_entries">
-        <item>@string/time_1_day</item>
-        <item>@string/time_2_days</item>
-        <item>@string/time_3_days</item>
-        <item>@string/time_4_days</item>
-        <item>@string/time_5_days</item>
-        <item>@string/time_6_days</item>
-        <item>@string/time_1_week</item>
-    </string-array>
-    <string-array name="minfree">
-        <item>@string/size_25_mb</item>
-        <item>@string/size_50_mb</item>
-        <item>@string/size_75_mb</item>
-        <item>@string/size_80_mb</item>
-        <item>@string/size_100_mb</item>
-    </string-array>
-    <string-array name="minfree_values">
-        <item>1536,2048,4096,5120,5632,6144</item>
-        <item>2560,3840,6400,7680,10240,12800</item>
-        <item>2560,3840,6400,10240,12800,19200</item>
-        <item>2048,3072,6144,15360,17920,20480</item>
-        <item>2560,3840,6400,12800,12800,25600</item>
-    </string-array>
-    <string-array name="increasing_ring_interval_entries">
-        <item>@string/increasing_ring_interval_eachring</item>
-        <item>@string/increasing_ring_interval_half_second</item>
-        <item>@string/increasing_ring_interval_1second</item>
-        <item>@string/increasing_ring_interval_2seconds</item>
-        <item>@string/increasing_ring_interval_3seconds</item>
-        <item>@string/increasing_ring_interval_5seconds</item>
-        <item>@string/increasing_ring_interval_10seconds</item>
-    </string-array>
-    <integer-array name="increasing_ring_interval_values">
-        <item>0</item>
-        <item>500</item>
-        <item>1000</item>
-        <item>2000</item>
-        <item>3000</item>
-        <item>5000</item>
-        <item>10000</item>
-    </integer-array>
-    <string-array name="less_notification_sounds_entries">
-        <item>@string/default_behavior</item>
-        <item>@string/time_3_seconds</item>
-        <item>@string/time_5_seconds</item>
-        <item>@string/time_10_seconds</item>
-        <item>@string/time_15_seconds</item>
-        <item>@string/time_30_seconds</item>
-        <item>@string/time_45_seconds</item>
-        <item>@string/time_1_minute</item>
-        <item>@string/time_2_minutes</item>
-    </string-array>
-    <string-array name="less_notification_sounds_values">
-        <item>0</item>
-        <item>3000</item>
-        <item>5000</item>
-        <item>10000</item>
         <item>15000</item>
         <item>30000</item>
-        <item>45000</item>
         <item>60000</item>
         <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
     </string-array>
-    <string-array name="pref_lockscreen_glowtorch_entries">
-        <item>@string/lockscreen_torch_off</item>
-        <item>@string/lockscreen_torch_lockcircle</item>
-        <item>@string/lockscreen_torch_navring</item>
+    <string-array name="lock_after_timeout_entries">
+        <item>Immediately</item>
+        <item>5 seconds</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
     </string-array>
-    <string-array name="pref_lockscreen_glowtorch_values">
+    <string-array name="lock_after_timeout_values">
         <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-    <string-array name="signal_style_entries">
-        <item>@string/show_signal_bars</item>
-        <item>@string/show_signal_text</item>
-        <item>@string/show_with_dbm</item>
-    </string-array>
-    <string-array name="signal_style_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-    <string-array name="wifi_signal_style_entries">
-        <item>@string/show_signal_bars</item>
-        <item>@string/show_signal_text</item>
-    </string-array>
-    <string-array name="wifi_signal_style_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-    <string-array name="lcd_density_entries">
-        <item>160</item>
-        <item>180</item>
-        <item>200</item>
-        <item>220</item>
-        <item>240</item>
-        <item>241</item>
-        <item>260</item>
-        <item>280</item>
-        <item>300</item>
-        <item>320</item>
-        <item>340</item>
-        <item>@string/custom_density</item>
-    </string-array>
-    <string-array name="lcd_density_stock_entries">
-        <item>160 -- mdpi</item>
-        <item>240 -- hdpi</item>
-        <item>320 -- xhdpi</item>
-    </string-array>
-    <string-array name="lcd_density_stock_values">
-        <item>160</item>
-        <item>240</item>
-        <item>320</item>
-    </string-array>
-    <string-array name="lockscreen_dialog_entries">
-        <item>@string/none</item>
-        <item>@string/lockscreen_unlock</item>
-        <item>@string/lockscreen_camera</item>
-        <item>@string/google_now</item>
-        <item>@string/select_application</item>
-    </string-array>
-    <string-array name="lockscreen_dialog_values">
-        <item>**null**</item>
-        <item>**unlock**</item>
-        <item>**camera**</item>
-        <item>**assist**</item>
-        <item>**app**</item>
-    </string-array>
-    <string-array name="notification_action_entries">
-        <item>@string/nothing</item>
-        <item>@string/clock_options</item>
-        <item>@string/alarm</item>
-        <item>@string/today</item>
-        <item>@string/event</item>
-        <item>@string/voiceassist</item>
-        <item>@string/custom_app</item>
-    </string-array>
-    <string-array name="notification_action_values">
-        <item>**null**</item>
-        <item>**clockoptions**</item>
-        <item>**alarm**</item>
-        <item>**today**</item>
-        <item>**event**</item>
-        <item>**voiceassist**</item>
-        <item>**app**</item>
-    </string-array>
-    <string-array name="weather_action_entries">
-        <item>@string/nothing</item>
-        <item>@string/update</item>
-        <item>@string/custom_app</item>
-    </string-array>
-    <string-array name="weather_action_values">
-        <item>**nothing**</item>
-        <item>**update**</item>
-        <item>**app**</item>
-    </string-array>
-    <string-array name="user_mode_ui_entries">
-        <item>@string/phone_mode_ui</item>
-        <item>@string/tablet_mode_ui</item>
-        <item>@string/phablet_mode_ui</item>
-    </string-array>
-    <string-array name="user_mode_ui_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-    <string-array name="choose_toggle_side_entries">
-        <item>@string/right</item>
-        <item>@string/left</item>
-    </string-array>
-    <string-array name="choose_toggle_side_values">
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-    <string-array name="hide_navbar_timeout_entries">
-        <item>@string/hide_navbar_timeout_never</item>
-        <item>@string/hide_navbar_timeout_1500</item>
-        <item>@string/hide_navbar_timeout_3000</item>
-        <item>@string/hide_navbar_timeout_5000</item>
-        <item>@string/hide_navbar_timeout_10000</item>
-        <item>@string/hide_navbar_timeout_15000</item>
-        <item>@string/hide_navbar_timeout_30000</item>
-    </string-array>
-    <string-array name="hide_navbar_timeout_values">
-        <item>0</item>
-        <item>1500</item>
-        <item>3000</item>
         <item>5000</item>
-        <item>10000</item>
         <item>15000</item>
         <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
     </string-array>
-    <string-array name="entries_system_power_crt_mode">
-        <item>@string/system_power_crt_mode_horizontal</item>
-        <item>@string/system_power_crt_mode_vertical</item>
-        <item>@string/system_power_crt_mode_both</item>
+    <string-array name="entries_font_size">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Huge</item>
     </string-array>
-    <string-array name="values_system_power_crt_mode">
+    <string-array name="entryvalues_font_size">
+        <item>0.85</item>
+        <item>1.0</item>
+        <item>1.15</item>
+        <item>1.30</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Very slow</item>
+        <item>Slow</item>
+        <item>Normal</item>
+        <item>Fast</item>
+        <item>Faster</item>
+        <item>Very fast</item>
+        <item>Rapid</item>
+        <item>Very rapid</item>
+        <item>Fastest</item>
+    </string-array>
+    <string-array name="tts_rate_values">
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Very low</item>
+        <item>Low</item>
+        <item>Normal</item>
+        <item>High</item>
+        <item>Very high</item>
+    </string-array>
+    <string-array name="tts_pitch_values">
+        <item>50</item>
+        <item>80</item>
+        <item>100</item>
+        <item>120</item>
+        <item>150</item>
+    </string-array>
+    <string-array name="tts_demo_strings">
+        <item>This is an example of speech synthesis in English.</item>
+        <item>Voici un échantillon de synthèse vocale en français.</item>
+        <item>Dies ist ein Beispiel für Sprachsynthese in Deutsch.</item>
+        <item>Questo è un esempio di sintesi vocale in italiano.</item>
+        <item>Este es un ejemplo de síntesis de voz en español.</item>
+    </string-array>
+    <string-array name="tts_demo_string_langs">
+        <item>eng</item>
+        <item>fra</item>
+        <item>deu</item>
+        <item>ita</item>
+        <item>spa</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Scanning…</item>
+        <item>Connecting…</item>
+        <item>Authenticating…</item>
+        <item>Obtaining IP address…</item>
+        <item>Connected</item>
+        <item>Suspended</item>
+        <item>Disconnecting…</item>
+        <item>Disconnected</item>
+        <item>Unsuccessful</item>
+        <item>Blocked</item>
+        <item>Temporarily avoiding poor connection</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Scanning…</item>
+        <item>Connecting to %1$s…</item>
+        <item>Authenticating with %1$s…</item>
+        <item>Obtaining IP address from %1$s…</item>
+        <item>Connected to %1$s</item>
+        <item>Suspended</item>
+        <item>Disconnecting from %1$s…</item>
+        <item>Disconnected</item>
+        <item>Unsuccessful</item>
+        <item>Blocked</item>
+        <item>Temporarily avoiding poor connection</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+        <item>@string/wifi_security_eap</item>
+    </string-array>
+    <string-array name="wifi_security_no_eap">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wpa</item>
+        <item>@string/wifi_security_wpa2</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PWD</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Push button</item>
+        <item>PIN from peer device</item>
+        <item>PIN from this device</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Connected</item>
+        <item>Invited</item>
+        <item>Unsuccessful</item>
+        <item>Available</item>
+        <item>Out-of-range</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>1 hour</item>
+        <item>Never time out</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Poor</item>
+        <item>Fair</item>
+        <item>Good</item>
+        <item>Excellent</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Always</item>
+        <item>Only when plugged in</item>
+        <item>Never (increases data usage)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Always</item>
+        <item>Only when plugged in</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Auto</item>
+        <item>5 GHz only</item>
+        <item>2.4 GHz only</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-    <string-array name="ribbon_icon_size_entries">
-        <item>@string/icon_size_normal</item>
-        <item>@string/icon_size_20</item>
-        <item>@string/icon_size_15</item>
+    <string-array name="wifi_countrycode_entries">
+        <item>United States</item>
+        <item>Canada, Taiwan</item>
+        <item>Germany</item>
+        <item>Europe</item>
+        <item>Japan, Russia</item>
+        <item>Australia</item>
+        <item>China</item>
+        <item>Korea</item>
+        <item>Turkey</item>
+        <item>Singapore</item>
+        <item>Brazil</item>
     </string-array>
-    <string-array name="ribbon_icon_size_values">
-        <item>0</item>
-        <item>20</item>
-        <item>15</item>
+    <string-array name="wifi_countrycode_values">
+        <item>US</item>
+        <item>CA</item>
+        <item>DE</item>
+        <item>GB</item>
+        <item>JP</item>
+        <item>AU</item>
+        <item>CN</item>
+        <item>KR</item>
+        <item>TR</item>
+        <item>SG</item>
+        <item>BR</item>
     </string-array>
-    <string-array name="ribbon_handle_location_entries">
-        <item>@string/center</item>
-        <item>@string/top</item>
-        <item>@string/bottom</item>
+    <string-array name="usage_stats_display_order_types">
+        <item>Usage time</item>
+        <item>Launch count</item>
+        <item>App name</item>
     </string-array>
-    <string-array name="ribbon_handle_location_values">
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PWD</item>
+    </string-array>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>None</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>None</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Static</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>None</item>
+        <item>Manual</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Off</item>
+        <item>Alert</item>
+        <item>Vibrate</item>
+    </string-array>
+    <string-array name="nfc_polling_mode_entries">
+        <item>@string/nfc_polling_mode_screen_off</item>
+        <item>@string/nfc_polling_mode_screen_locked</item>
+        <item>@string/nfc_polling_mode_screen_unlocked</item>
+    </string-array>
+    <string-array name="nfc_polling_mode_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="emergency_tone_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-    <string-array name="ribbon_dismiss_entries">
-        <item>@string/never</item>
-        <item>@string/always</item>
-        <item>@string/not_bar</item>
+    <string-array name="special_locale_codes">
+        <item>zh_CN</item>
+        <item>zh_TW</item>
     </string-array>
-    <string-array name="ribbon_dismiss_values">
+    <string-array name="special_locale_names">
+        <item>中文 (简体)</item>
+        <item>中文 (繁體)</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>None</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP or CHAP</item>
+    </string-array>
+    <string-array name="apn_auth_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="apn_protocol_entries">
+        <item>IPv4</item>
+        <item>IPv6</item>
+        <item>IPv4/IPv6</item>
+    </string-array>
+    <string-array name="apn_protocol_values">
+        <item>IP</item>
+        <item>IPV6</item>
+        <item>IPV4V6</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Unspecified</item>
+    </string-array>
+    <string-array name="bearer_values">
+        <item>14</item>
+        <item>13</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="mvno_type_entries">
+        <item>None</item>
+        <item>SPN</item>
+        <item>IMSI</item>
+        <item>GID</item>
+    </string-array>
+    <string-array name="mvno_type_values">
+        <item></item>
+        <item>spn</item>
+        <item>imsi</item>
+        <item>gid</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Internal device storage</item>
+        <item>Removable SD card</item>
+        <item>Let the system decide</item>
+    </string-array>
+    <string-array name="app_install_location_values">
+        <item>device</item>
+        <item>sdcard</item>
+        <item>auto</item>
+    </string-array>
+    <string-array name="app_ops_categories">
+        <item>Operations</item>
+    </string-array>
+    <string-array name="app_ops_summaries">
+        <item>coarse location</item>
+        <item>fine location</item>
+        <item>GPS</item>
+        <item>vibrate</item>
+        <item>read contacts</item>
+        <item>modify contacts</item>
+        <item>read call log</item>
+        <item>modify call log</item>
+        <item>read calendar</item>
+        <item>modify calendar</item>
+        <item>wi-fi scan</item>
+        <item>notification</item>
+        <item>cell scan</item>
+        <item>call phone</item>
+        <item>read SMS</item>
+        <item>write SMS</item>
+        <item>receive SMS</item>
+        <item>receive emergency SMS</item>
+        <item>receive MMS</item>
+        <item>receive WAP push</item>
+        <item>send SMS</item>
+        <item>read ICC SMS</item>
+        <item>write ICC SMS</item>
+        <item>modify settings</item>
+        <item>draw on top</item>
+        <item>access notifications</item>
+        <item>camera</item>
+        <item>record audio</item>
+        <item>play audio</item>
+        <item>read clipboard</item>
+        <item>modify clipboard</item>
+    </string-array>
+    <string-array name="app_ops_labels">
+        <item>Location</item>
+        <item>Location</item>
+        <item>Location</item>
+        <item>Vibrate</item>
+        <item>Read contacts</item>
+        <item>Modify contacts</item>
+        <item>Read call log</item>
+        <item>Modify call log</item>
+        <item>Read calendar</item>
+        <item>Modify calendar</item>
+        <item>Location</item>
+        <item>Post notification</item>
+        <item>Location</item>
+        <item>Call phone</item>
+        <item>Receive SMS/MMS</item>
+        <item>Send SMS/MMS</item>
+        <item>Receive SMS/MMS</item>
+        <item>Receive SMS/MMS</item>
+        <item>Receive SMS/MMS</item>
+        <item>Receive SMS/MMS</item>
+        <item>Send SMS/MMS</item>
+        <item>Receive SMS/MMS</item>
+        <item>Send SMS/MMS</item>
+        <item>Modify settings</item>
+        <item>Draw on top</item>
+        <item>Access notifications</item>
+        <item>Camera</item>
+        <item>Record audio</item>
+        <item>Play audio</item>
+        <item>Read clipboard</item>
+        <item>Modify clipboard</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Short</item>
+        <item>Medium</item>
+        <item>Long</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Never check</item>
+        <item>Check for DRM content only</item>
+        <item>Always check</item>
+    </string-array>
+    <string-array name="hdcp_checking_values">
+        <item>never</item>
+        <item>drm-only</item>
+        <item>always</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Never use HDCP checking</item>
+        <item>Use HDCP checking for DRM content only</item>
+        <item>Always use HDCP checking</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animation off</item>
+        <item>Animation scale .5x</item>
+        <item>Animation scale 1x</item>
+        <item>Animation scale 1.5x</item>
+        <item>Animation scale 2x</item>
+        <item>Animation scale 5x</item>
+        <item>Animation scale 10x</item>
+    </string-array>
+    <string-array name="window_animation_scale_values">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animation off</item>
+        <item>Animation scale .5x</item>
+        <item>Animation scale 1x</item>
+        <item>Animation scale 1.5x</item>
+        <item>Animation scale 2x</item>
+        <item>Animation scale 5x</item>
+        <item>Animation scale 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_values">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animation off</item>
+        <item>Animation scale .5x</item>
+        <item>Animation scale 1x</item>
+        <item>Animation scale 1.5x</item>
+        <item>Animation scale 2x</item>
+        <item>Animation scale 5x</item>
+        <item>Animation scale 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_values">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>None</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi and 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="overlay_display_devices_values">
+        <item></item>
+        <item>720x480/160</item>
+        <item>1280x720/213</item>
+        <item>1920x1080/320</item>
+        <item>1280x720/213;1920x1080/320</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>None</item>
+        <item>Logcat</item>
+        <item>Systrace (Graphics)</item>
+        <item>Call stack on glGetError</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_values">
+        <item>0</item>
+        <item>1</item>
+        <item>systrace</item>
+        <item>error</item>
+    </string-array>
+    <string-array name="show_non_rect_clip_entries">
+        <item>Off</item>
+        <item>Draw non-rectangular clip region in blue</item>
+        <item>Highlight tested drawing commands in green</item>
+    </string-array>
+    <string-array name="show_non_rect_clip_values">
+        <item>hide</item>
+        <item>region</item>
+        <item>highlight</item>
+    </string-array>
+    <string-array name="track_frame_time_entries">
+        <item>Off</item>
+        <item>On screen as bars</item>
+        <item>On screen as lines</item>
+        <item>In adb shell dumpsys gfxinfo</item>
+    </string-array>
+    <string-array name="track_frame_time_values">
+        <item>false</item>
+        <item>visual_bars</item>
+        <item>visual_lines</item>
+        <item>true</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Standard limit</item>
+        <item>No background processes</item>
+        <item>At most 1 process</item>
+        <item>At most 2 processes</item>
+        <item>At most 3 processes</item>
+        <item>At most 4 processes</item>
+    </string-array>
+    <string-array name="incoming_contact_entries">
+        <item>@string/quiet_hours_auto_disabled</item>
+        <item>@string/quiet_hours_auto_enabled</item>
+        <item>@string/quiet_hours_auto_contacts</item>
+    </string-array>
+    <string-array name="incoming_contact_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-    <string-array name="window_columns_entries">
+    <string-array name="incoming_call_number_entries">
+        <item>@string/two</item>
+        <item>@string/three</item>
+        <item>@string/four</item>
+        <item>@string/five</item>
+        <item>@string/six</item>
+    </string-array>
+    <string-array name="incoming_call_number_values">
+        <item>2</item>
         <item>3</item>
         <item>4</item>
         <item>5</item>
         <item>6</item>
     </string-array>
-    <string-array name="window_columns_values">
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-    </string-array>
-    <string-array name="navigation_bar_qty_entries">
+    <string-array name="app_process_limit_values">
+        <item>-1</item>
+        <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
     </string-array>
-    <string-array name="navigation_bar_qty_values">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+    <string-array name="vpn_types">
+        <item>PPTP</item>
+        <item>L2TP/IPSec PSK</item>
+        <item>L2TP/IPSec RSA</item>
+        <item>IPSec Xauth PSK</item>
+        <item>IPSec Xauth RSA</item>
+        <item>IPSec Hybrid RSA</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN with pre-shared keys</item>
+        <item>L2TP/IPSec VPN with certificates</item>
+        <item>IPSec VPN with pre-shared keys and Xauth authentication</item>
+        <item>IPSec VPN with certificates and Xauth authentication</item>
+        <item>IPSec VPN with certificates and hybrid authentication</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Disconnected</item>
+        <item>Initializing…</item>
+        <item>Connecting…</item>
+        <item>Connected</item>
+        <item>Timeout</item>
+        <item>Unsuccessful</item>
+    </string-array>
+    <string-array name="user_content_ratings_entries">
+        <item>Ascended being</item>
+        <item>Human</item>
+        <item>Neanderthal</item>
+        <item>Chimp</item>
+        <item>Monkey</item>
+    </string-array>
+    <string-array name="user_content_ratings_values">
         <item>5</item>
-        <item>6</item>
-        <item>7</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Ask</item>
+        <item>Never allow</item>
+        <item>Always allow</item>
+    </string-array>
+    <array name="sms_security_check_limit_entries">
+        <item>@string/sms_security_check_limit_default</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+    </array>
+    <string-array name="sms_security_check_limit_values">
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+    </string-array>
+    <string-array name="auto_brightness_sensitivity_entries">
+        <item>@string/auto_brightness_sensitivity_verylow</item>
+        <item>@string/auto_brightness_sensitivity_low</item>
+        <item>@string/auto_brightness_sensitivity_medium</item>
+        <item>@string/auto_brightness_sensitivity_high</item>
+        <item>@string/auto_brightness_sensitivity_veryhigh</item>
+    </string-array>
+    <integer-array name="auto_brightness_sensitivity_values">
+        <item>150</item>
+        <item>125</item>
+        <item>100</item>
+        <item>50</item>
+        <item>25</item>
+    </integer-array>
+    <string-array name="multi_sim_entries">
+        <item>Subscription 1</item>
+        <item>Subscription 2</item>
+        <item>Subscription 3</item>
+    </string-array>
+    <string-array name="input_method_selector_titles">
+        <item>@string/input_method_selector_show_automatically_title</item>
+        <item>@string/input_method_selector_always_show_title</item>
+        <item>@string/input_method_selector_always_hide_title</item>
+    </string-array>
+    <string-array name="input_method_selector_values">
+        <item>@string/input_method_selector_show_automatically_value</item>
+        <item>@string/input_method_selector_always_show_value</item>
+        <item>@string/input_method_selector_always_hide_value</item>
     </string-array>
 </resources>

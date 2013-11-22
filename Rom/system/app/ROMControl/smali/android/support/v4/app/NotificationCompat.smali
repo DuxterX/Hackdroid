@@ -22,19 +22,7 @@
 
 
 # static fields
-.field public static final FLAG_HIGH_PRIORITY:I = 0x80
-
-.field private static final IMPL:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl; = null
-
-.field public static final PRIORITY_DEFAULT:I = 0x0
-
-.field public static final PRIORITY_HIGH:I = 0x1
-
-.field public static final PRIORITY_LOW:I = -0x1
-
-.field public static final PRIORITY_MAX:I = 0x2
-
-.field public static final PRIORITY_MIN:I = -0x2
+.field private static final IMPL:Landroid/support/v4/app/NotificationCompat$NotificationCompatImpl;
 
 
 # direct methods

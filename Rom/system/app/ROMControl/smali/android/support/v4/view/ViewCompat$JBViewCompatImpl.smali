@@ -27,35 +27,6 @@
 
 
 # virtual methods
-.method public getAccessibilityNodeProvider(Landroid/view/View;)Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;
-    .locals 2
-    .parameter "view"
-
-    .prologue
-    .line 354
-    invoke-static {p1}, Landroid/support/v4/view/ViewCompatJB;->getAccessibilityNodeProvider(Landroid/view/View;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    .line 355
-    .local v0, compat:Ljava/lang/Object;
-    if-eqz v0, :cond_0
-
-    .line 356
-    new-instance v1, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;
-
-    invoke-direct {v1, v0}, Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;-><init>(Ljava/lang/Object;)V
-
-    .line 358
-    :goto_0
-    return-object v1
-
-    :cond_0
-    const/4 v1, 0x0
-
-    goto :goto_0
-.end method
-
 .method public getImportantForAccessibility(Landroid/view/View;)I
     .locals 1
     .parameter "view"
@@ -63,47 +34,6 @@
     .prologue
     .line 342
     invoke-static {p1}, Landroid/support/v4/view/ViewCompatJB;->getImportantForAccessibility(Landroid/view/View;)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public getParentForAccessibility(Landroid/view/View;)Landroid/view/ViewParent;
-    .locals 1
-    .parameter "view"
-
-    .prologue
-    .line 363
-    invoke-static {p1}, Landroid/support/v4/view/ViewCompatJB;->getParentForAccessibility(Landroid/view/View;)Landroid/view/ViewParent;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public hasTransientState(Landroid/view/View;)Z
-    .locals 1
-    .parameter "view"
-
-    .prologue
-    .line 318
-    invoke-static {p1}, Landroid/support/v4/view/ViewCompatJB;->hasTransientState(Landroid/view/View;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public performAccessibilityAction(Landroid/view/View;ILandroid/os/Bundle;)Z
-    .locals 1
-    .parameter "view"
-    .parameter "action"
-    .parameter "arguments"
-
-    .prologue
-    .line 350
-    invoke-static {p1, p2, p3}, Landroid/support/v4/view/ViewCompatJB;->performAccessibilityAction(Landroid/view/View;ILandroid/os/Bundle;)Z
 
     move-result v0
 
@@ -122,22 +52,6 @@
     return-void
 .end method
 
-.method public postInvalidateOnAnimation(Landroid/view/View;IIII)V
-    .locals 0
-    .parameter "view"
-    .parameter "left"
-    .parameter "top"
-    .parameter "right"
-    .parameter "bottom"
-
-    .prologue
-    .line 330
-    invoke-static {p1, p2, p3, p4, p5}, Landroid/support/v4/view/ViewCompatJB;->postInvalidateOnAnimation(Landroid/view/View;IIII)V
-
-    .line 331
-    return-void
-.end method
-
 .method public postOnAnimation(Landroid/view/View;Ljava/lang/Runnable;)V
     .locals 0
     .parameter "view"
@@ -148,33 +62,6 @@
     invoke-static {p1, p2}, Landroid/support/v4/view/ViewCompatJB;->postOnAnimation(Landroid/view/View;Ljava/lang/Runnable;)V
 
     .line 335
-    return-void
-.end method
-
-.method public postOnAnimationDelayed(Landroid/view/View;Ljava/lang/Runnable;J)V
-    .locals 0
-    .parameter "view"
-    .parameter "action"
-    .parameter "delayMillis"
-
-    .prologue
-    .line 338
-    invoke-static {p1, p2, p3, p4}, Landroid/support/v4/view/ViewCompatJB;->postOnAnimationDelayed(Landroid/view/View;Ljava/lang/Runnable;J)V
-
-    .line 339
-    return-void
-.end method
-
-.method public setHasTransientState(Landroid/view/View;Z)V
-    .locals 0
-    .parameter "view"
-    .parameter "hasTransientState"
-
-    .prologue
-    .line 322
-    invoke-static {p1, p2}, Landroid/support/v4/view/ViewCompatJB;->setHasTransientState(Landroid/view/View;Z)V
-
-    .line 323
     return-void
 .end method
 

@@ -77,19 +77,3 @@
 
     return v0
 .end method
-
-.method public static getYVelocity(Landroid/view/VelocityTracker;I)F
-    .locals 1
-    .parameter "tracker"
-    .parameter "pointerId"
-
-    .prologue
-    .line 91
-    sget-object v0, Landroid/support/v4/view/VelocityTrackerCompat;->IMPL:Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;
-
-    invoke-interface {v0, p0, p1}, Landroid/support/v4/view/VelocityTrackerCompat$VelocityTrackerVersionImpl;->getYVelocity(Landroid/view/VelocityTracker;I)F
-
-    move-result v0
-
-    return v0
-.end method

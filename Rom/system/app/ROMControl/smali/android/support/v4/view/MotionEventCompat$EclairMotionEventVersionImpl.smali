@@ -44,19 +44,6 @@
     return v0
 .end method
 
-.method public getPointerCount(Landroid/view/MotionEvent;)I
-    .locals 1
-    .parameter "event"
-
-    .prologue
-    .line 99
-    invoke-static {p1}, Landroid/support/v4/view/MotionEventCompatEclair;->getPointerCount(Landroid/view/MotionEvent;)I
-
-    move-result v0
-
-    return v0
-.end method
-
 .method public getPointerId(Landroid/view/MotionEvent;I)I
     .locals 1
     .parameter "event"

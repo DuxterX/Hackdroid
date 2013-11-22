@@ -126,23 +126,6 @@
     return v0
 .end method
 
-.method public onAbsorb(I)Z
-    .locals 2
-    .parameter "velocity"
-
-    .prologue
-    .line 204
-    sget-object v0, Landroid/support/v4/widget/EdgeEffectCompat;->IMPL:Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;
-
-    iget-object v1, p0, Landroid/support/v4/widget/EdgeEffectCompat;->mEdgeEffect:Ljava/lang/Object;
-
-    invoke-interface {v0, v1, p1}, Landroid/support/v4/widget/EdgeEffectCompat$EdgeEffectImpl;->onAbsorb(Ljava/lang/Object;I)Z
-
-    move-result v0
-
-    return v0
-.end method
-
 .method public onPull(F)Z
     .locals 2
     .parameter "deltaDistance"

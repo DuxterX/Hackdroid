@@ -468,6 +468,8 @@ To resume using your phone, you need to perform a factory reset. When you set up
     <string name="bluetooth_settings_summary">Manage connections, set device name &amp; discoverability</string>
     <string name="bluetooth_pairing_request">Bluetooth pairing request</string>
     <string name="bluetooth_enter_pin_msg">"To pair with:&lt;br>&lt;b>%1$s&lt;/b>&lt;br>&lt;br>Type the device's required PIN:"</string>
+    <string name="bluetooth_enter_pin_msg_hs">"
+Type PIN to pair with \"%1$s\". [High Security Enabled: Needs 16 character key]"</string>
     <string name="bluetooth_enter_passkey_msg">"To pair with:&lt;br>&lt;b>%1$s&lt;/b>&lt;br>&lt;br>Type the device's required passkey:"</string>
     <string name="bluetooth_enable_alphanumeric_pin">PIN contains letters or symbols</string>
     <string name="bluetooth_pin_values_hint">Usually 0000 or 1234</string>
@@ -506,6 +508,8 @@ To resume using your phone, you need to perform a factory reset. When you set up
     <string name="bluetooth_profile_hid">Input device</string>
     <string name="bluetooth_profile_pan">Internet access</string>
     <string name="bluetooth_profile_pan_nap">Internet connection sharing</string>
+    <string name="bluetooth_profile_sap">SIM Access</string>
+    <string name="bluetooth_profile_dun">Dial-up network access</string>
     <string name="bluetooth_disconnect_a2dp_profile">%1$s will be disconnected from media audio.</string>
     <string name="bluetooth_disconnect_headset_profile">%1$s will be disconnected from handsfree audio.</string>
     <string name="bluetooth_disconnect_hid_profile">%1$s will be disconnected from input device.</string>
@@ -520,6 +524,8 @@ To resume using your phone, you need to perform a factory reset. When you set up
     <string name="bluetooth_a2dp_profile_summary_connected">Connected to media audio</string>
     <string name="bluetooth_headset_profile_summary_connected">Connected to phone audio</string>
     <string name="bluetooth_opp_profile_summary_connected">Connected to file transfer server</string>
+    <string name="bluetooth_sap_profile_summary_connected">Connected to SIM access server</string>
+    <string name="bluetooth_dun_profile_summary_connected">Connected to DUN server</string>
     <string name="bluetooth_opp_profile_summary_not_connected">Not connected to file transfer server</string>
     <string name="bluetooth_hid_profile_summary_connected">Connected to input device</string>
     <string name="bluetooth_pan_user_profile_summary_connected">Connected to device for Internet access</string>
@@ -527,6 +533,8 @@ To resume using your phone, you need to perform a factory reset. When you set up
     <string name="bluetooth_a2dp_profile_summary_use_for">Use for media audio</string>
     <string name="bluetooth_headset_profile_summary_use_for">Use for phone audio</string>
     <string name="bluetooth_opp_profile_summary_use_for">Use for file transfer</string>
+    <string name="bluetooth_sap_profile_summary_use_for">Use for SIM Access</string>
+    <string name="bluetooth_dun_profile_summary_use_for">Use for dial-up network access</string>
     <string name="bluetooth_hid_profile_summary_use_for">Use for input</string>
     <string name="bluetooth_pan_profile_summary_use_for">Use for Internet access</string>
     <string name="bluetooth_dock_settings">Dock Settings</string>
@@ -844,9 +852,9 @@ Phone setup can require significant network activity."</string>
     <string name="title_font_size">Font size</string>
     <string name="summary_font_size">%1$s</string>
     <string name="dialog_title_font_size">Font size</string>
-    <string name="sim_lock_settings">SIM card lock settings</string>
-    <string name="sim_lock_settings_category">Set up SIM card lock</string>
-    <string name="sim_lock_settings_title">SIM card lock</string>
+    <string name="sim_lock_settings">SIM/RUIM card lock settings</string>
+    <string name="sim_lock_settings_category">Set up SIM/RUIM card lock</string>
+    <string name="sim_lock_settings_title">SIM/RUIM card lock</string>
     <string name="sim_pin_toggle">Lock SIM card</string>
     <string name="sim_lock_on">Require PIN to use phone</string>
     <string name="sim_lock_off">Require PIN to use phone</string>
@@ -860,6 +868,7 @@ Phone setup can require significant network activity."</string>
     <string name="sim_change_pin">SIM PIN</string>
     <string name="sim_bad_pin">Incorrect PIN</string>
     <string name="sim_pins_dont_match">"PINs don't match"</string>
+    <string name="sim_absent">No SIM/RUIM</string>
     <string name="sim_change_failed">"Can't change PIN.
 Possibly incorrect PIN."</string>
     <string name="sim_change_succeeded">SIM PIN changed successfully</string>
@@ -867,6 +876,12 @@ Possibly incorrect PIN."</string>
 Possibly incorrect PIN."</string>
     <string name="sim_enter_ok">OK</string>
     <string name="sim_enter_cancel">Cancel</string>
+    <string name="sim_pin_change_failed_enable_sim_lock">Enable SIM/RUIM lock before changing PIN</string>
+    <string name="sim_enable_disable_lock_not_supported">Lock is not supported by this SIM/RUIM</string>
+    <string name="sim_pin_attempts">"
+Attempts remaining :"</string>
+    <string name="sim_pin_enabled">PIN enabled</string>
+    <string name="sim_pin_disabled">PIN disabled</string>
     <string name="device_info_settings">Phone status</string>
     <string name="system_update_settings_list_item_title">System updates</string>
     <string name="system_update_settings_list_item_summary" />
@@ -888,7 +903,9 @@ Possibly incorrect PIN."</string>
     <string name="device_info_not_available">Not available</string>
     <string name="device_status_activity_title">Status</string>
     <string name="device_status">Status</string>
-    <string name="device_status_summary">Phone number, signal, etc.</string>
+    <string name="device_status_summary">Battery status, battery level, etc.</string>
+    <string name="device_additional_status_summary">Phone number, signal, IMEI, etc.</string>
+    <string name="device_additional_status">Additional status info</string>
     <string name="storage_settings">Storage</string>
     <string name="storage_settings_title">Storage settings</string>
     <string name="storage_settings_summary">Unmount SD card, view available storage</string>
@@ -1194,9 +1211,7 @@ Ready to start? Touch Next."</string>
  "<li>Disabled app notifications</li>"
  "<li>Default applications for actions</li>"
  "<li>Background data restrictions for apps</li>"
-
  "<li>Any permission restrictions</li>"
-
  You will not lose any app data."</string>
     <string name="reset_app_preferences_button">Reset apps</string>
     <string name="manage_space_text">Manage space</string>
@@ -1817,6 +1832,7 @@ A Google approach to syncing data to allow access to your contacts, appointments
     <string name="data_usage_tab_wifi">Wi‑Fi</string>
     <string name="data_usage_tab_ethernet">Ethernet</string>
     <string name="data_usage_tab_mobile">Mobile</string>
+    <string name="data_usage_tab_slot">SIM</string>
     <string name="data_usage_tab_4g">4G</string>
     <string name="data_usage_tab_3g">2G-3G</string>
     <string name="data_usage_list_mobile">Mobile</string>
@@ -1921,10 +1937,36 @@ This setting affects all users on this phone."</string>
     <string name="backup_pw_set_button_text">Set backup password</string>
     <string name="backup_pw_cancel_button_text">Cancel</string>
     <string name="percentage">%d%%</string>
+    <string name="sel_sub_title">Configure subscriptions</string>
+    <string name="sel_sub_summary">Select the subscription SUB1, SUB2, etc..</string>
+    <string name="select_subscription">Select subscription</string>
+    <string name="subs_settings">Subscription status</string>
+    <string name="multi_sim_settings_title">Multi-sim settings</string>
+    <string name="multi_sim_settings_summary">Set up multi-sim Settings for voice, data and SMS</string>
+    <string name="voice_title">Voice/USSD/MMI</string>
+    <string name="voice_summary">Select subscription for voice call</string>
+    <string name="data_title">Data call</string>
+    <string name="data_summary">Select subscription for data call</string>
+    <string name="sms_title">SMS</string>
+    <string name="sms_summary">Select the subscription for sending SMS</string>
+    <string name="set_data_subscription_progress">Setting data subscription..</string>
+    <string name="set_dds_success">Data subscription set</string>
+    <string name="set_dds_failed">Unable to set data subscription. Remove any existing data connection and try again.</string>
+    <string name="set_dds_error">Unable to set data subscription</string>
+    <string name="set_sms_error">Unable to set SMS subscription, subscription not active</string>
+    <string name="set_voice_error">Unable to set voice subscription, subscription not active</string>
+    <string name="set_priority_sub_error">Unable to set priority subscription, subscription not active</string>
+    <string name="prompt_user">Prompt user</string>
     <string name="additional_system_update_settings_list_item_title">Additional system updates</string>
     <string name="selinux_status_disabled">Disabled</string>
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
+    <string name="tune_away_title">Tune Away</string>
+    <string name="tune_away_Default">Disable</string>
+    <string name="tune_away_enabled">TuneAway Enabled!</string>
+    <string name="tune_away_disabled">TuneAway Disabled!</string>
+    <string name="priority_sub_title">Priority Subscription</string>
+    <string name="priority_sub_summary">Select Priority Subscription</string>
     <string name="user_settings_title">Users</string>
     <string name="user_list_title">Users &amp; profiles</string>
     <string name="user_add_user_menu">Add user or profile</string>
@@ -1999,7 +2041,7 @@ Any user can accept updated app permissions on behalf of all other users."</stri
     <string name="quick_links_title">Quick Links</string>
     <string name="rom_control_title">Hackdroid ROM Control</string>
     <string name="themes_title">Themes</string>
-    <string name="mod_version">Hackdroid Version</string>
+    <string name="mod_version">Hackdroid version</string>
     <string name="mod_version_default">Unknown</string>
     <string name="anonymous_statistics_title">AOKP Statistics</string>
     <string name="anonymous_statistics_summary">Help make AOKP better by opting into anonymous statistics reporting</string>
@@ -2141,4 +2183,7 @@ For an example of the data that is submitted, tap on Preview Data."</string>
     <string name="user_image_take_photo">Take photo</string>
     <string name="user_image_choose_photo">Choose photo from Gallery</string>
     <string name="regulatory_info_text" />
+    <string name="confirm_delete_apn">The APN will be deleted.</string>
+    <string name="label_global_roaming_settings">Global roaming settings</string>
+    <string name="last_launcher">Please install or enable another launcher before you can disable or uninstall this one</string>
 </resources>

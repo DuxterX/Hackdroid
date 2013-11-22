@@ -3,12 +3,6 @@
 .source "FragmentPagerAdapter.java"
 
 
-# static fields
-.field private static final DEBUG:Z = false
-
-.field private static final TAG:Ljava/lang/String; = "FragmentPagerAdapter"
-
-
 # instance fields
 .field private mCurTransaction:Landroid/app/FragmentTransaction;
 

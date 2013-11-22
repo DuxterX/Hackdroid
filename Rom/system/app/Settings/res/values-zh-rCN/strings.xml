@@ -2042,6 +2042,7 @@ PIN 可能不正确。"</string>
     <string name="user_image_take_photo">拍照</string>
     <string name="user_image_choose_photo">从图库中选择照片</string>
     <string name="regulatory_info_text" />
+    <string name="label_global_roaming_settings">国际漫游设置</string>
     <string name="show_dev_on">您现在处于开发者模式！</string>
     <string name="show_dev_already">您已处于开发者模式，无需进行此操作。</string>
     <string name="permissions_settings_title">权限管理</string>

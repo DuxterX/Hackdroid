@@ -184,21 +184,21 @@
 # virtual methods
 .method public onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 3
-    .parameter "host"
-    .parameter "event"
+    .parameter
+    .parameter
 
     .prologue
     .line 2734
     invoke-super {p0, p1, p2}, Landroid/support/v4/view/AccessibilityDelegateCompat;->onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
     .line 2735
-    const-class v1, Landroid/support/v4/view/ViewPager;
+    const-class v0, Landroid/support/v4/view/ViewPager;
 
-    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {p2, v1}, Landroid/view/accessibility/AccessibilityEvent;->setClassName(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, v0}, Landroid/view/accessibility/AccessibilityEvent;->setClassName(Ljava/lang/CharSequence;)V
 
     .line 2736
     invoke-static {}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->obtain()Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
@@ -206,7 +206,6 @@
     move-result-object v0
 
     .line 2737
-    .local v0, recordCompat:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
     invoke-direct {p0}, Landroid/support/v4/view/ViewPager$MyAccessibilityDelegate;->canScroll()Z
 
     move-result v1
@@ -272,8 +271,8 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;)V
     .locals 1
-    .parameter "host"
-    .parameter "info"
+    .parameter
+    .parameter
 
     .prologue
     .line 2748

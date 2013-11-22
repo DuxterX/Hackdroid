@@ -3,24 +3,6 @@
 .source "PagerTabStrip.java"
 
 
-# static fields
-.field private static final FULL_UNDERLINE_HEIGHT:I = 0x1
-
-.field private static final INDICATOR_HEIGHT:I = 0x3
-
-.field private static final MIN_PADDING_BOTTOM:I = 0x6
-
-.field private static final MIN_STRIP_HEIGHT:I = 0x20
-
-.field private static final MIN_TEXT_SPACING:I = 0x40
-
-.field private static final TAB_PADDING:I = 0x10
-
-.field private static final TAB_SPACING:I = 0x20
-
-.field private static final TAG:Ljava/lang/String; = "PagerTabStrip"
-
-
 # instance fields
 .field private mDrawFullUnderline:Z
 
@@ -283,16 +265,6 @@
 
 
 # virtual methods
-.method public getDrawFullUnderline()Z
-    .locals 1
-
-    .prologue
-    .line 210
-    iget-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->mDrawFullUnderline:Z
-
-    return v0
-.end method
-
 .method getMinHeight()I
     .locals 2
 
@@ -307,16 +279,6 @@
     invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
 
     move-result v0
-
-    return v0
-.end method
-
-.method public getTabIndicatorColor()I
-    .locals 1
-
-    .prologue
-    .line 147
-    iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->mIndicatorColor:I
 
     return v0
 .end method
@@ -731,26 +693,6 @@
     const/4 v0, 0x0
 
     goto :goto_0
-.end method
-
-.method public setDrawFullUnderline(Z)V
-    .locals 1
-    .parameter "drawFull"
-
-    .prologue
-    .line 197
-    iput-boolean p1, p0, Landroid/support/v4/view/PagerTabStrip;->mDrawFullUnderline:Z
-
-    .line 198
-    const/4 v0, 0x1
-
-    iput-boolean v0, p0, Landroid/support/v4/view/PagerTabStrip;->mDrawFullUnderlineSet:Z
-
-    .line 199
-    invoke-virtual {p0}, Landroid/support/v4/view/PagerTabStrip;->invalidate()V
-
-    .line 200
-    return-void
 .end method
 
 .method public setPadding(IIII)V

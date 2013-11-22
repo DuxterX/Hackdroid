@@ -17,8 +17,8 @@
     <item type="id" name="operations_section">false</item>
     <item type="id" name="op_icon">false</item>
     <item type="id" name="op_name">false</item>
-    <item type="id" name="op_time">false</item>
     <item type="id" name="switchWidget">false</item>
+    <item type="id" name="op_time">false</item>
     <item type="id" name="app_icon">false</item>
     <item type="id" name="app_name">false</item>
     <item type="id" name="pager">false</item>
@@ -571,6 +571,8 @@
     <item type="id" name="ussd_dialer">false</item>
     <item type="id" name="sprint_tools">false</item>
     <item type="id" name="device_section">false</item>
+    <item type="id" name="multi_sim_settings">false</item>
+    <item type="id" name="global_roaming_settings">false</item>
     <item type="id" name="sound_settings">false</item>
     <item type="id" name="display_settings">false</item>
     <item type="id" name="storage_settings">false</item>
@@ -587,6 +589,7 @@
     <item type="id" name="account_add">false</item>
     <item type="id" name="system_section">false</item>
     <item type="id" name="superuser">false</item>
+    <item type="id" name="appops_settings">false</item>
     <item type="id" name="date_time_settings">false</item>
     <item type="id" name="accessibility_settings">false</item>
     <item type="id" name="development_settings">false</item>

@@ -17,6 +17,3 @@
 # virtual methods
 .method public abstract getXVelocity(Landroid/view/VelocityTracker;I)F
 .end method
-
-.method public abstract getYVelocity(Landroid/view/VelocityTracker;I)F
-.end method

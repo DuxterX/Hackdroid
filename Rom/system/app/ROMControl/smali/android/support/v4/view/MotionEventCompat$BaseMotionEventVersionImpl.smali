@@ -52,17 +52,6 @@
     goto :goto_0
 .end method
 
-.method public getPointerCount(Landroid/view/MotionEvent;)I
-    .locals 1
-    .parameter "event"
-
-    .prologue
-    .line 73
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
 .method public getPointerId(Landroid/view/MotionEvent;I)I
     .locals 2
     .parameter "event"

@@ -4,6 +4,7 @@ isFrameworkApk: false
 usesFramework:
   ids:
   - 1
+  tag: framework-res
 sdkInfo:
   minSdkVersion: '18'
   targetSdkVersion: '18'
