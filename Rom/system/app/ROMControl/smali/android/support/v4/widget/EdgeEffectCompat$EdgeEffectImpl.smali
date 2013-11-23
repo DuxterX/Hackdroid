@@ -27,6 +27,9 @@
 .method public abstract newEdgeEffect(Landroid/content/Context;)Ljava/lang/Object;
 .end method
 
+.method public abstract onAbsorb(Ljava/lang/Object;I)Z
+.end method
+
 .method public abstract onPull(Ljava/lang/Object;F)Z
 .end method
 

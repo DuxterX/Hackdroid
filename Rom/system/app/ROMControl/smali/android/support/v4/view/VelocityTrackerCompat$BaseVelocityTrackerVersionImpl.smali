@@ -43,3 +43,17 @@
 
     return v0
 .end method
+
+.method public getYVelocity(Landroid/view/VelocityTracker;I)F
+    .locals 1
+    .parameter "tracker"
+    .parameter "pointerId"
+
+    .prologue
+    .line 44
+    invoke-virtual {p1}, Landroid/view/VelocityTracker;->getYVelocity()F
+
+    move-result v0
+
+    return v0
+.end method

@@ -14,6 +14,24 @@
 
 
 # static fields
+.field public static final ACTION_HOVER_ENTER:I = 0x9
+
+.field public static final ACTION_HOVER_EXIT:I = 0xa
+
+.field public static final ACTION_HOVER_MOVE:I = 0x7
+
+.field public static final ACTION_MASK:I = 0xff
+
+.field public static final ACTION_POINTER_DOWN:I = 0x5
+
+.field public static final ACTION_POINTER_INDEX_MASK:I = 0xff00
+
+.field public static final ACTION_POINTER_INDEX_SHIFT:I = 0x8
+
+.field public static final ACTION_POINTER_UP:I = 0x6
+
+.field public static final ACTION_SCROLL:I = 0x8
+
 .field static final IMPL:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
 
@@ -93,6 +111,36 @@
     and-int/2addr v0, v1
 
     shr-int/lit8 v0, v0, 0x8
+
+    return v0
+.end method
+
+.method public static getActionMasked(Landroid/view/MotionEvent;)I
+    .locals 1
+    .parameter "event"
+
+    .prologue
+    .line 183
+    invoke-virtual {p0}, Landroid/view/MotionEvent;->getAction()I
+
+    move-result v0
+
+    and-int/lit16 v0, v0, 0xff
+
+    return v0
+.end method
+
+.method public static getPointerCount(Landroid/view/MotionEvent;)I
+    .locals 1
+    .parameter "event"
+
+    .prologue
+    .line 236
+    sget-object v0, Landroid/support/v4/view/MotionEventCompat;->IMPL:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
+
+    invoke-interface {v0, p0}, Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;->getPointerCount(Landroid/view/MotionEvent;)I
+
+    move-result v0
 
     return v0
 .end method

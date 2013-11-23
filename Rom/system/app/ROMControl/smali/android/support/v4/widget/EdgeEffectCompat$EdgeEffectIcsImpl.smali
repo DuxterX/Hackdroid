@@ -82,6 +82,20 @@
     return-object v0
 .end method
 
+.method public onAbsorb(Ljava/lang/Object;I)Z
+    .locals 1
+    .parameter "edgeEffect"
+    .parameter "velocity"
+
+    .prologue
+    .line 116
+    invoke-static {p1, p2}, Landroid/support/v4/widget/EdgeEffectCompatIcs;->onAbsorb(Ljava/lang/Object;I)Z
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public onPull(Ljava/lang/Object;F)Z
     .locals 1
     .parameter "edgeEffect"

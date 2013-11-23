@@ -12,6 +12,18 @@
 .end annotation
 
 
+# static fields
+.field static final FRAGMENTS_TAG:Ljava/lang/String; = "android:support:fragments"
+
+.field private static final HONEYCOMB:I = 0xb
+
+.field static final MSG_REALLY_STOPPED:I = 0x1
+
+.field static final MSG_RESUME_PENDING:I = 0x2
+
+.field private static final TAG:Ljava/lang/String; = "FragmentActivity"
+
+
 # instance fields
 .field mAllLoaderManagers:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
@@ -870,6 +882,32 @@
     return-void
 .end method
 
+.method public getLastCustomNonConfigurationInstance()Ljava/lang/Object;
+    .locals 2
+
+    .prologue
+    .line 612
+    invoke-virtual {p0}, Landroid/support/v4/app/FragmentActivity;->getLastNonConfigurationInstance()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/support/v4/app/FragmentActivity$NonConfigurationInstances;
+
+    .line 614
+    .local v0, nc:Landroid/support/v4/app/FragmentActivity$NonConfigurationInstances;
+    if-eqz v0, :cond_0
+
+    iget-object v1, v0, Landroid/support/v4/app/FragmentActivity$NonConfigurationInstances;->custom:Ljava/lang/Object;
+
+    :goto_0
+    return-object v1
+
+    :cond_0
+    const/4 v1, 0x0
+
+    goto :goto_0
+.end method
+
 .method getLoaderManager(Ljava/lang/String;ZZ)Landroid/support/v4/app/LoaderManagerImpl;
     .locals 2
     .parameter "who"
@@ -938,6 +976,45 @@
     iget-object v0, p0, Landroid/support/v4/app/FragmentActivity;->mFragments:Landroid/support/v4/app/FragmentManagerImpl;
 
     return-object v0
+.end method
+
+.method public getSupportLoaderManager()Landroid/support/v4/app/LoaderManager;
+    .locals 3
+
+    .prologue
+    const/4 v2, 0x1
+
+    .line 856
+    iget-object v0, p0, Landroid/support/v4/app/FragmentActivity;->mLoaderManager:Landroid/support/v4/app/LoaderManagerImpl;
+
+    if-eqz v0, :cond_0
+
+    .line 857
+    iget-object v0, p0, Landroid/support/v4/app/FragmentActivity;->mLoaderManager:Landroid/support/v4/app/LoaderManagerImpl;
+
+    .line 861
+    :goto_0
+    return-object v0
+
+    .line 859
+    :cond_0
+    iput-boolean v2, p0, Landroid/support/v4/app/FragmentActivity;->mCheckedForLoaderManager:Z
+
+    .line 860
+    const/4 v0, 0x0
+
+    iget-boolean v1, p0, Landroid/support/v4/app/FragmentActivity;->mLoadersStarted:Z
+
+    invoke-virtual {p0, v0, v1, v2}, Landroid/support/v4/app/FragmentActivity;->getLoaderManager(Ljava/lang/String;ZZ)Landroid/support/v4/app/LoaderManagerImpl;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroid/support/v4/app/FragmentActivity;->mLoaderManager:Landroid/support/v4/app/LoaderManagerImpl;
+
+    .line 861
+    iget-object v0, p0, Landroid/support/v4/app/FragmentActivity;->mLoaderManager:Landroid/support/v4/app/LoaderManagerImpl;
+
+    goto :goto_0
 .end method
 
 .method invalidateSupportFragment(Ljava/lang/String;)V

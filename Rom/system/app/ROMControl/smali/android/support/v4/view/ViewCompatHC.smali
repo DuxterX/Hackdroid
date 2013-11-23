@@ -26,6 +26,19 @@
     return-wide v0
 .end method
 
+.method public static getLayerType(Landroid/view/View;)I
+    .locals 1
+    .parameter "view"
+
+    .prologue
+    .line 33
+    invoke-virtual {p0}, Landroid/view/View;->getLayerType()I
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public static setLayerType(Landroid/view/View;ILandroid/graphics/Paint;)V
     .locals 0
     .parameter "view"

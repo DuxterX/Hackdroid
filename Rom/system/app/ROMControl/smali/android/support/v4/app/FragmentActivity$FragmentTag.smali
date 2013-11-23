@@ -15,7 +15,13 @@
 
 
 # static fields
-.field public static final Fragment:[I
+.field public static final Fragment:[I = null
+
+.field public static final Fragment_id:I = 0x1
+
+.field public static final Fragment_name:I = 0x0
+
+.field public static final Fragment_tag:I = 0x2
 
 
 # direct methods

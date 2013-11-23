@@ -39,3 +39,16 @@
 
     return v0
 .end method
+
+.method public setOverScrollMode(Landroid/view/View;I)V
+    .locals 0
+    .parameter "v"
+    .parameter "mode"
+
+    .prologue
+    .line 264
+    invoke-static {p1, p2}, Landroid/support/v4/view/ViewCompatGingerbread;->setOverScrollMode(Landroid/view/View;I)V
+
+    .line 265
+    return-void
+.end method

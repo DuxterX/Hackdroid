@@ -75,6 +75,24 @@
     return-object v0
 .end method
 
+.method public static onAbsorb(Ljava/lang/Object;I)Z
+    .locals 1
+    .parameter "edgeEffect"
+    .parameter "velocity"
+
+    .prologue
+    .line 57
+    check-cast p0, Landroid/widget/EdgeEffect;
+
+    .end local p0
+    invoke-virtual {p0, p1}, Landroid/widget/EdgeEffect;->onAbsorb(I)V
+
+    .line 58
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
 .method public static onPull(Ljava/lang/Object;F)Z
     .locals 1
     .parameter "edgeEffect"

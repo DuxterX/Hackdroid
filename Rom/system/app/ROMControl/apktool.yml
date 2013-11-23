@@ -1,14 +1,14 @@
 version: 1.5.2
-apkFileName: Settings.apk
+apkFileName: ROMControl.apk
 isFrameworkApk: false
 usesFramework:
   ids:
   - 1
   tag: framework-res
 sdkInfo:
-  minSdkVersion: '18'
+  minSdkVersion: '17'
   targetSdkVersion: '18'
 packageInfo:
-  cur_package: android
-  orig_package: com.android.settings
+  cur_package: com.aokp.romcontrol
+  orig_package: com.aokp.romcontrol
 compressionType: false

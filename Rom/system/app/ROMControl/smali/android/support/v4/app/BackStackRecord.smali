@@ -15,6 +15,26 @@
 .end annotation
 
 
+# static fields
+.field static final OP_ADD:I = 0x1
+
+.field static final OP_ATTACH:I = 0x7
+
+.field static final OP_DETACH:I = 0x6
+
+.field static final OP_HIDE:I = 0x4
+
+.field static final OP_NULL:I = 0x0
+
+.field static final OP_REMOVE:I = 0x3
+
+.field static final OP_REPLACE:I = 0x2
+
+.field static final OP_SHOW:I = 0x5
+
+.field static final TAG:Ljava/lang/String; = "FragmentManager"
+
+
 # instance fields
 .field mAddToBackStack:Z
 
@@ -249,6 +269,56 @@
 
 
 # virtual methods
+.method public add(ILandroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
+    .locals 2
+    .parameter "containerViewId"
+    .parameter "fragment"
+
+    .prologue
+    .line 384
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
+    invoke-direct {p0, p1, p2, v0, v1}, Landroid/support/v4/app/BackStackRecord;->doAddOp(ILandroid/support/v4/app/Fragment;Ljava/lang/String;I)V
+
+    .line 385
+    return-object p0
+.end method
+
+.method public add(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;
+    .locals 1
+    .parameter "containerViewId"
+    .parameter "fragment"
+    .parameter "tag"
+
+    .prologue
+    .line 389
+    const/4 v0, 0x1
+
+    invoke-direct {p0, p1, p2, p3, v0}, Landroid/support/v4/app/BackStackRecord;->doAddOp(ILandroid/support/v4/app/Fragment;Ljava/lang/String;I)V
+
+    .line 390
+    return-object p0
+.end method
+
+.method public add(Landroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;
+    .locals 2
+    .parameter "fragment"
+    .parameter "tag"
+
+    .prologue
+    .line 379
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
+    invoke-direct {p0, v0, p1, p2, v1}, Landroid/support/v4/app/BackStackRecord;->doAddOp(ILandroid/support/v4/app/Fragment;Ljava/lang/String;I)V
+
+    .line 380
+    return-object p0
+.end method
+
 .method addOp(Landroid/support/v4/app/BackStackRecord$Op;)V
     .locals 1
     .parameter "op"
@@ -341,6 +411,32 @@
     iput-object p1, p0, Landroid/support/v4/app/BackStackRecord;->mName:Ljava/lang/String;
 
     .line 508
+    return-object p0
+.end method
+
+.method public attach(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
+    .locals 2
+    .parameter "fragment"
+
+    .prologue
+    .line 470
+    new-instance v0, Landroid/support/v4/app/BackStackRecord$Op;
+
+    invoke-direct {v0}, Landroid/support/v4/app/BackStackRecord$Op;-><init>()V
+
+    .line 471
+    .local v0, op:Landroid/support/v4/app/BackStackRecord$Op;
+    const/4 v1, 0x7
+
+    iput v1, v0, Landroid/support/v4/app/BackStackRecord$Op;->cmd:I
+
+    .line 472
+    iput-object p1, v0, Landroid/support/v4/app/BackStackRecord$Op;->fragment:Landroid/support/v4/app/Fragment;
+
+    .line 473
+    invoke-virtual {p0, v0}, Landroid/support/v4/app/BackStackRecord;->addOp(Landroid/support/v4/app/BackStackRecord$Op;)V
+
+    .line 475
     return-object p0
 .end method
 
@@ -566,6 +662,20 @@
     return v0
 .end method
 
+.method public commitAllowingStateLoss()I
+    .locals 1
+
+    .prologue
+    .line 578
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Landroid/support/v4/app/BackStackRecord;->commitInternal(Z)I
+
+    move-result v0
+
+    return v0
+.end method
+
 .method commitInternal(Z)I
     .locals 6
     .parameter "allowStateLoss"
@@ -674,6 +784,60 @@
     iput v2, p0, Landroid/support/v4/app/BackStackRecord;->mIndex:I
 
     goto :goto_0
+.end method
+
+.method public detach(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
+    .locals 2
+    .parameter "fragment"
+
+    .prologue
+    .line 461
+    new-instance v0, Landroid/support/v4/app/BackStackRecord$Op;
+
+    invoke-direct {v0}, Landroid/support/v4/app/BackStackRecord$Op;-><init>()V
+
+    .line 462
+    .local v0, op:Landroid/support/v4/app/BackStackRecord$Op;
+    const/4 v1, 0x6
+
+    iput v1, v0, Landroid/support/v4/app/BackStackRecord$Op;->cmd:I
+
+    .line 463
+    iput-object p1, v0, Landroid/support/v4/app/BackStackRecord$Op;->fragment:Landroid/support/v4/app/Fragment;
+
+    .line 464
+    invoke-virtual {p0, v0}, Landroid/support/v4/app/BackStackRecord;->addOp(Landroid/support/v4/app/BackStackRecord$Op;)V
+
+    .line 466
+    return-object p0
+.end method
+
+.method public disallowAddToBackStack()Landroid/support/v4/app/FragmentTransaction;
+    .locals 2
+
+    .prologue
+    .line 516
+    iget-boolean v0, p0, Landroid/support/v4/app/BackStackRecord;->mAddToBackStack:Z
+
+    if-eqz v0, :cond_0
+
+    .line 517
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "This transaction is already being added to the back stack"
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 520
+    :cond_0
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Landroid/support/v4/app/BackStackRecord;->mAllowAddToBackStack:Z
+
+    .line 521
+    return-object p0
 .end method
 
 .method public dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
@@ -1291,6 +1455,96 @@
     .end packed-switch
 .end method
 
+.method public getBreadCrumbShortTitle()Ljava/lang/CharSequence;
+    .locals 2
+
+    .prologue
+    .line 357
+    iget v0, p0, Landroid/support/v4/app/BackStackRecord;->mBreadCrumbShortTitleRes:I
+
+    if-eqz v0, :cond_0
+
+    .line 358
+    iget-object v0, p0, Landroid/support/v4/app/BackStackRecord;->mManager:Landroid/support/v4/app/FragmentManagerImpl;
+
+    iget-object v0, v0, Landroid/support/v4/app/FragmentManagerImpl;->mActivity:Landroid/support/v4/app/FragmentActivity;
+
+    iget v1, p0, Landroid/support/v4/app/BackStackRecord;->mBreadCrumbShortTitleRes:I
+
+    invoke-virtual {v0, v1}, Landroid/support/v4/app/FragmentActivity;->getText(I)Ljava/lang/CharSequence;
+
+    move-result-object v0
+
+    .line 360
+    :goto_0
+    return-object v0
+
+    :cond_0
+    iget-object v0, p0, Landroid/support/v4/app/BackStackRecord;->mBreadCrumbShortTitleText:Ljava/lang/CharSequence;
+
+    goto :goto_0
+.end method
+
+.method public getBreadCrumbShortTitleRes()I
+    .locals 1
+
+    .prologue
+    .line 346
+    iget v0, p0, Landroid/support/v4/app/BackStackRecord;->mBreadCrumbShortTitleRes:I
+
+    return v0
+.end method
+
+.method public getBreadCrumbTitle()Ljava/lang/CharSequence;
+    .locals 2
+
+    .prologue
+    .line 350
+    iget v0, p0, Landroid/support/v4/app/BackStackRecord;->mBreadCrumbTitleRes:I
+
+    if-eqz v0, :cond_0
+
+    .line 351
+    iget-object v0, p0, Landroid/support/v4/app/BackStackRecord;->mManager:Landroid/support/v4/app/FragmentManagerImpl;
+
+    iget-object v0, v0, Landroid/support/v4/app/FragmentManagerImpl;->mActivity:Landroid/support/v4/app/FragmentActivity;
+
+    iget v1, p0, Landroid/support/v4/app/BackStackRecord;->mBreadCrumbTitleRes:I
+
+    invoke-virtual {v0, v1}, Landroid/support/v4/app/FragmentActivity;->getText(I)Ljava/lang/CharSequence;
+
+    move-result-object v0
+
+    .line 353
+    :goto_0
+    return-object v0
+
+    :cond_0
+    iget-object v0, p0, Landroid/support/v4/app/BackStackRecord;->mBreadCrumbTitleText:Ljava/lang/CharSequence;
+
+    goto :goto_0
+.end method
+
+.method public getBreadCrumbTitleRes()I
+    .locals 1
+
+    .prologue
+    .line 342
+    iget v0, p0, Landroid/support/v4/app/BackStackRecord;->mBreadCrumbTitleRes:I
+
+    return v0
+.end method
+
+.method public getId()I
+    .locals 1
+
+    .prologue
+    .line 338
+    iget v0, p0, Landroid/support/v4/app/BackStackRecord;->mIndex:I
+
+    return v0
+.end method
+
 .method public getName()Ljava/lang/String;
     .locals 1
 
@@ -1299,6 +1553,82 @@
     iget-object v0, p0, Landroid/support/v4/app/BackStackRecord;->mName:Ljava/lang/String;
 
     return-object v0
+.end method
+
+.method public getTransition()I
+    .locals 1
+
+    .prologue
+    .line 779
+    iget v0, p0, Landroid/support/v4/app/BackStackRecord;->mTransition:I
+
+    return v0
+.end method
+
+.method public getTransitionStyle()I
+    .locals 1
+
+    .prologue
+    .line 783
+    iget v0, p0, Landroid/support/v4/app/BackStackRecord;->mTransitionStyle:I
+
+    return v0
+.end method
+
+.method public hide(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
+    .locals 2
+    .parameter "fragment"
+
+    .prologue
+    .line 443
+    new-instance v0, Landroid/support/v4/app/BackStackRecord$Op;
+
+    invoke-direct {v0}, Landroid/support/v4/app/BackStackRecord$Op;-><init>()V
+
+    .line 444
+    .local v0, op:Landroid/support/v4/app/BackStackRecord$Op;
+    const/4 v1, 0x4
+
+    iput v1, v0, Landroid/support/v4/app/BackStackRecord$Op;->cmd:I
+
+    .line 445
+    iput-object p1, v0, Landroid/support/v4/app/BackStackRecord$Op;->fragment:Landroid/support/v4/app/Fragment;
+
+    .line 446
+    invoke-virtual {p0, v0}, Landroid/support/v4/app/BackStackRecord;->addOp(Landroid/support/v4/app/BackStackRecord$Op;)V
+
+    .line 448
+    return-object p0
+.end method
+
+.method public isAddToBackStackAllowed()Z
+    .locals 1
+
+    .prologue
+    .line 512
+    iget-boolean v0, p0, Landroid/support/v4/app/BackStackRecord;->mAllowAddToBackStack:Z
+
+    return v0
+.end method
+
+.method public isEmpty()Z
+    .locals 1
+
+    .prologue
+    .line 787
+    iget v0, p0, Landroid/support/v4/app/BackStackRecord;->mNumOp:I
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method
 
 .method public popFromBackStack(Z)V
@@ -1685,6 +2015,48 @@
         :pswitch_5
         :pswitch_6
     .end packed-switch
+.end method
+
+.method public remove(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
+    .locals 2
+    .parameter "fragment"
+
+    .prologue
+    .line 434
+    new-instance v0, Landroid/support/v4/app/BackStackRecord$Op;
+
+    invoke-direct {v0}, Landroid/support/v4/app/BackStackRecord$Op;-><init>()V
+
+    .line 435
+    .local v0, op:Landroid/support/v4/app/BackStackRecord$Op;
+    const/4 v1, 0x3
+
+    iput v1, v0, Landroid/support/v4/app/BackStackRecord$Op;->cmd:I
+
+    .line 436
+    iput-object p1, v0, Landroid/support/v4/app/BackStackRecord$Op;->fragment:Landroid/support/v4/app/Fragment;
+
+    .line 437
+    invoke-virtual {p0, v0}, Landroid/support/v4/app/BackStackRecord;->addOp(Landroid/support/v4/app/BackStackRecord$Op;)V
+
+    .line 439
+    return-object p0
+.end method
+
+.method public replace(ILandroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
+    .locals 1
+    .parameter "containerViewId"
+    .parameter "fragment"
+
+    .prologue
+    .line 421
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, p1, p2, v0}, Landroid/support/v4/app/BackStackRecord;->replace(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;
+
+    move-result-object v0
+
+    return-object v0
 .end method
 
 .method public replace(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;
@@ -2199,6 +2571,23 @@
     .end packed-switch
 .end method
 
+.method public setBreadCrumbShortTitle(I)Landroid/support/v4/app/FragmentTransaction;
+    .locals 1
+    .parameter "res"
+
+    .prologue
+    .line 537
+    iput p1, p0, Landroid/support/v4/app/BackStackRecord;->mBreadCrumbShortTitleRes:I
+
+    .line 538
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Landroid/support/v4/app/BackStackRecord;->mBreadCrumbShortTitleText:Ljava/lang/CharSequence;
+
+    .line 539
+    return-object p0
+.end method
+
 .method public setBreadCrumbShortTitle(Ljava/lang/CharSequence;)Landroid/support/v4/app/FragmentTransaction;
     .locals 1
     .parameter "text"
@@ -2213,6 +2602,23 @@
     iput-object p1, p0, Landroid/support/v4/app/BackStackRecord;->mBreadCrumbShortTitleText:Ljava/lang/CharSequence;
 
     .line 545
+    return-object p0
+.end method
+
+.method public setBreadCrumbTitle(I)Landroid/support/v4/app/FragmentTransaction;
+    .locals 1
+    .parameter "res"
+
+    .prologue
+    .line 525
+    iput p1, p0, Landroid/support/v4/app/BackStackRecord;->mBreadCrumbTitleRes:I
+
+    .line 526
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Landroid/support/v4/app/BackStackRecord;->mBreadCrumbTitleText:Ljava/lang/CharSequence;
+
+    .line 527
     return-object p0
 .end method
 
@@ -2233,6 +2639,46 @@
     return-object p0
 .end method
 
+.method public setCustomAnimations(II)Landroid/support/v4/app/FragmentTransaction;
+    .locals 1
+    .parameter "enter"
+    .parameter "exit"
+
+    .prologue
+    const/4 v0, 0x0
+
+    .line 479
+    invoke-virtual {p0, p1, p2, v0, v0}, Landroid/support/v4/app/BackStackRecord;->setCustomAnimations(IIII)Landroid/support/v4/app/FragmentTransaction;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public setCustomAnimations(IIII)Landroid/support/v4/app/FragmentTransaction;
+    .locals 0
+    .parameter "enter"
+    .parameter "exit"
+    .parameter "popEnter"
+    .parameter "popExit"
+
+    .prologue
+    .line 484
+    iput p1, p0, Landroid/support/v4/app/BackStackRecord;->mEnterAnim:I
+
+    .line 485
+    iput p2, p0, Landroid/support/v4/app/BackStackRecord;->mExitAnim:I
+
+    .line 486
+    iput p3, p0, Landroid/support/v4/app/BackStackRecord;->mPopEnterAnim:I
+
+    .line 487
+    iput p4, p0, Landroid/support/v4/app/BackStackRecord;->mPopExitAnim:I
+
+    .line 488
+    return-object p0
+.end method
+
 .method public setTransition(I)Landroid/support/v4/app/FragmentTransaction;
     .locals 0
     .parameter "transition"
@@ -2242,6 +2688,44 @@
     iput p1, p0, Landroid/support/v4/app/BackStackRecord;->mTransition:I
 
     .line 493
+    return-object p0
+.end method
+
+.method public setTransitionStyle(I)Landroid/support/v4/app/FragmentTransaction;
+    .locals 0
+    .parameter "styleRes"
+
+    .prologue
+    .line 497
+    iput p1, p0, Landroid/support/v4/app/BackStackRecord;->mTransitionStyle:I
+
+    .line 498
+    return-object p0
+.end method
+
+.method public show(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
+    .locals 2
+    .parameter "fragment"
+
+    .prologue
+    .line 452
+    new-instance v0, Landroid/support/v4/app/BackStackRecord$Op;
+
+    invoke-direct {v0}, Landroid/support/v4/app/BackStackRecord$Op;-><init>()V
+
+    .line 453
+    .local v0, op:Landroid/support/v4/app/BackStackRecord$Op;
+    const/4 v1, 0x5
+
+    iput v1, v0, Landroid/support/v4/app/BackStackRecord$Op;->cmd:I
+
+    .line 454
+    iput-object p1, v0, Landroid/support/v4/app/BackStackRecord$Op;->fragment:Landroid/support/v4/app/Fragment;
+
+    .line 455
+    invoke-virtual {p0, v0}, Landroid/support/v4/app/BackStackRecord;->addOp(Landroid/support/v4/app/BackStackRecord$Op;)V
+
+    .line 457
     return-object p0
 .end method
 

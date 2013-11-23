@@ -14,6 +14,10 @@
 .end annotation
 
 
+# static fields
+.field private static final TAG:Ljava/lang/String; = "SingleLineAllCapsTransform"
+
+
 # instance fields
 .field private mLocale:Ljava/util/Locale;
 

@@ -19,11 +19,17 @@
 
 
 # static fields
-.field private static final ATTRS:[I
+.field private static final ATTRS:[I = null
 
-.field private static final IMPL:Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImpl;
+.field private static final IMPL:Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImpl; = null
 
-.field private static final TEXT_ATTRS:[I
+.field private static final SIDE_ALPHA:F = 0.6f
+
+.field private static final TAG:Ljava/lang/String; = "PagerTitleStrip"
+
+.field private static final TEXT_ATTRS:[I = null
+
+.field private static final TEXT_SPACING:I = 0x10
 
 
 # instance fields
@@ -812,6 +818,21 @@
     return-void
 .end method
 
+.method public setGravity(I)V
+    .locals 0
+    .parameter "gravity"
+
+    .prologue
+    .line 236
+    iput p1, p0, Landroid/support/v4/view/PagerTitleStrip;->mGravity:I
+
+    .line 237
+    invoke-virtual {p0}, Landroid/support/v4/view/PagerTitleStrip;->requestLayout()V
+
+    .line 238
+    return-void
+.end method
+
 .method public setNonPrimaryAlpha(F)V
     .locals 4
     .parameter "alpha"
@@ -853,6 +874,47 @@
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 197
+    return-void
+.end method
+
+.method public setTextColor(I)V
+    .locals 4
+    .parameter "color"
+
+    .prologue
+    .line 206
+    iput p1, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextColor:I
+
+    .line 207
+    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mCurrText:Landroid/widget/TextView;
+
+    invoke-virtual {v1, p1}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 208
+    iget v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mNonPrimaryAlpha:I
+
+    shl-int/lit8 v1, v1, 0x18
+
+    iget v2, p0, Landroid/support/v4/view/PagerTitleStrip;->mTextColor:I
+
+    const v3, 0xffffff
+
+    and-int/2addr v2, v3
+
+    or-int v0, v1, v2
+
+    .line 209
+    .local v0, transparentColor:I
+    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mPrevText:Landroid/widget/TextView;
+
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 210
+    iget-object v1, p0, Landroid/support/v4/view/PagerTitleStrip;->mNextText:Landroid/widget/TextView;
+
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 211
     return-void
 .end method
 

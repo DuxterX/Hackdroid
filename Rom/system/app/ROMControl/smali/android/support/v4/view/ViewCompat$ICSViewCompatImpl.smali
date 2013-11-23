@@ -41,6 +41,63 @@
     return v0
 .end method
 
+.method public canScrollVertically(Landroid/view/View;I)Z
+    .locals 1
+    .parameter "v"
+    .parameter "direction"
+
+    .prologue
+    .line 295
+    invoke-static {p1, p2}, Landroid/support/v4/view/ViewCompatICS;->canScrollVertically(Landroid/view/View;I)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+    .locals 0
+    .parameter "v"
+    .parameter "event"
+
+    .prologue
+    .line 303
+    invoke-static {p1, p2}, Landroid/support/v4/view/ViewCompatICS;->onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+
+    .line 304
+    return-void
+.end method
+
+.method public onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;)V
+    .locals 1
+    .parameter "v"
+    .parameter "info"
+
+    .prologue
+    .line 307
+    invoke-virtual {p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;->getInfo()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {p1, v0}, Landroid/support/v4/view/ViewCompatICS;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Ljava/lang/Object;)V
+
+    .line 308
+    return-void
+.end method
+
+.method public onPopulateAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+    .locals 0
+    .parameter "v"
+    .parameter "event"
+
+    .prologue
+    .line 299
+    invoke-static {p1, p2}, Landroid/support/v4/view/ViewCompatICS;->onPopulateAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+
+    .line 300
+    return-void
+.end method
+
 .method public setAccessibilityDelegate(Landroid/view/View;Landroid/support/v4/view/AccessibilityDelegateCompat;)V
     .locals 1
     .parameter "v"

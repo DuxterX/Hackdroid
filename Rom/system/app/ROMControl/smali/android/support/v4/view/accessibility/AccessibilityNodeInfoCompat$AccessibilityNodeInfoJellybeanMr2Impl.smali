@@ -39,3 +39,16 @@
 
     return-object v0
 .end method
+
+.method public setViewIdResourceName(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
+    .parameter "info"
+    .parameter "viewId"
+
+    .prologue
+    .line 725
+    invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellybeanMr2;->setViewIdResourceName(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 726
+    return-void
+.end method

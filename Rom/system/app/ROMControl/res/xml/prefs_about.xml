@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:aokp="http://schemas.android.com/apk/res/com.aokp.romcontrol">
+    <PreferenceCategory android:title="@string/devs" android:key="devs">
+        <com.aokp.romcontrol.widgets.DeveloperPreference android:title="thehacker911" aokp:nameDev="thehacker911" aokp:githubLink="@string/github_aokp" aokp:emailDev="maikdiebenkorn@outlook.com" />
+    </PreferenceCategory>
+</PreferenceScreen>

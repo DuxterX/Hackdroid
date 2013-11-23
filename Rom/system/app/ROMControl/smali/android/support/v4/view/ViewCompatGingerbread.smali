@@ -26,3 +26,16 @@
 
     return v0
 .end method
+
+.method public static setOverScrollMode(Landroid/view/View;I)V
+    .locals 0
+    .parameter "v"
+    .parameter "mode"
+
+    .prologue
+    .line 27
+    invoke-virtual {p0, p1}, Landroid/view/View;->setOverScrollMode(I)V
+
+    .line 28
+    return-void
+.end method

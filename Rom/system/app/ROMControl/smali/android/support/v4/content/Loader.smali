@@ -6,7 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Landroid/support/v4/content/Loader$OnLoadCompleteListener;
+        Landroid/support/v4/content/Loader$OnLoadCompleteListener;,
+        Landroid/support/v4/content/Loader$ForceLoadContentObserver;
     }
 .end annotation
 
@@ -24,6 +25,8 @@
 .field mAbandoned:Z
 
 .field mContentChanged:Z
+
+.field mContext:Landroid/content/Context;
 
 .field mId:I
 
@@ -43,7 +46,79 @@
 .field mStarted:Z
 
 
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 2
+    .parameter "context"
+
+    .prologue
+    .local p0, this:Landroid/support/v4/content/Loader;,"Landroid/support/v4/content/Loader<TD;>;"
+    const/4 v1, 0x0
+
+    .line 91
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 38
+    iput-boolean v1, p0, Landroid/support/v4/content/Loader;->mStarted:Z
+
+    .line 39
+    iput-boolean v1, p0, Landroid/support/v4/content/Loader;->mAbandoned:Z
+
+    .line 40
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Landroid/support/v4/content/Loader;->mReset:Z
+
+    .line 41
+    iput-boolean v1, p0, Landroid/support/v4/content/Loader;->mContentChanged:Z
+
+    .line 42
+    iput-boolean v1, p0, Landroid/support/v4/content/Loader;->mProcessingChange:Z
+
+    .line 92
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroid/support/v4/content/Loader;->mContext:Landroid/content/Context;
+
+    .line 93
+    return-void
+.end method
+
+
 # virtual methods
+.method public abandon()V
+    .locals 1
+
+    .prologue
+    .line 262
+    .local p0, this:Landroid/support/v4/content/Loader;,"Landroid/support/v4/content/Loader<TD;>;"
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Landroid/support/v4/content/Loader;->mAbandoned:Z
+
+    .line 263
+    invoke-virtual {p0}, Landroid/support/v4/content/Loader;->onAbandon()V
+
+    .line 264
+    return-void
+.end method
+
+.method public commitContentChanged()V
+    .locals 1
+
+    .prologue
+    .line 328
+    .local p0, this:Landroid/support/v4/content/Loader;,"Landroid/support/v4/content/Loader<TD;>;"
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Landroid/support/v4/content/Loader;->mProcessingChange:Z
+
+    .line 329
+    return-void
+.end method
+
 .method public dataToString(Ljava/lang/Object;)Ljava/lang/String;
     .locals 2
     .parameter
@@ -79,6 +154,33 @@
     move-result-object v1
 
     return-object v1
+.end method
+
+.method public deliverResult(Ljava/lang/Object;)V
+    .locals 1
+    .parameter
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TD;)V"
+        }
+    .end annotation
+
+    .prologue
+    .line 103
+    .local p0, this:Landroid/support/v4/content/Loader;,"Landroid/support/v4/content/Loader<TD;>;"
+    .local p1, data:Ljava/lang/Object;,"TD;"
+    iget-object v0, p0, Landroid/support/v4/content/Loader;->mListener:Landroid/support/v4/content/Loader$OnLoadCompleteListener;
+
+    if-eqz v0, :cond_0
+
+    .line 104
+    iget-object v0, p0, Landroid/support/v4/content/Loader;->mListener:Landroid/support/v4/content/Loader$OnLoadCompleteListener;
+
+    invoke-interface {v0, p0, p1}, Landroid/support/v4/content/Loader$OnLoadCompleteListener;->onLoadComplete(Landroid/support/v4/content/Loader;Ljava/lang/Object;)V
+
+    .line 106
+    :cond_0
+    return-void
 .end method
 
 .method public dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
@@ -189,6 +291,117 @@
     return-void
 .end method
 
+.method public forceLoad()V
+    .locals 0
+
+    .prologue
+    .line 218
+    .local p0, this:Landroid/support/v4/content/Loader;,"Landroid/support/v4/content/Loader<TD;>;"
+    invoke-virtual {p0}, Landroid/support/v4/content/Loader;->onForceLoad()V
+
+    .line 219
+    return-void
+.end method
+
+.method public getContext()Landroid/content/Context;
+    .locals 1
+
+    .prologue
+    .line 112
+    .local p0, this:Landroid/support/v4/content/Loader;,"Landroid/support/v4/content/Loader<TD;>;"
+    iget-object v0, p0, Landroid/support/v4/content/Loader;->mContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method public getId()I
+    .locals 1
+
+    .prologue
+    .line 119
+    .local p0, this:Landroid/support/v4/content/Loader;,"Landroid/support/v4/content/Loader<TD;>;"
+    iget v0, p0, Landroid/support/v4/content/Loader;->mId:I
+
+    return v0
+.end method
+
+.method public isAbandoned()Z
+    .locals 1
+
+    .prologue
+    .line 167
+    .local p0, this:Landroid/support/v4/content/Loader;,"Landroid/support/v4/content/Loader<TD;>;"
+    iget-boolean v0, p0, Landroid/support/v4/content/Loader;->mAbandoned:Z
+
+    return v0
+.end method
+
+.method public isReset()Z
+    .locals 1
+
+    .prologue
+    .line 176
+    .local p0, this:Landroid/support/v4/content/Loader;,"Landroid/support/v4/content/Loader<TD;>;"
+    iget-boolean v0, p0, Landroid/support/v4/content/Loader;->mReset:Z
+
+    return v0
+.end method
+
+.method public isStarted()Z
+    .locals 1
+
+    .prologue
+    .line 158
+    .local p0, this:Landroid/support/v4/content/Loader;,"Landroid/support/v4/content/Loader<TD;>;"
+    iget-boolean v0, p0, Landroid/support/v4/content/Loader;->mStarted:Z
+
+    return v0
+.end method
+
+.method protected onAbandon()V
+    .locals 0
+
+    .prologue
+    .line 276
+    .local p0, this:Landroid/support/v4/content/Loader;,"Landroid/support/v4/content/Loader<TD;>;"
+    return-void
+.end method
+
+.method public onContentChanged()V
+    .locals 1
+
+    .prologue
+    .line 353
+    .local p0, this:Landroid/support/v4/content/Loader;,"Landroid/support/v4/content/Loader<TD;>;"
+    iget-boolean v0, p0, Landroid/support/v4/content/Loader;->mStarted:Z
+
+    if-eqz v0, :cond_0
+
+    .line 354
+    invoke-virtual {p0}, Landroid/support/v4/content/Loader;->forceLoad()V
+
+    .line 361
+    :goto_0
+    return-void
+
+    .line 359
+    :cond_0
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Landroid/support/v4/content/Loader;->mContentChanged:Z
+
+    goto :goto_0
+.end method
+
+.method protected onForceLoad()V
+    .locals 0
+
+    .prologue
+    .line 226
+    .local p0, this:Landroid/support/v4/content/Loader;,"Landroid/support/v4/content/Loader<TD;>;"
+    return-void
+.end method
+
 .method protected onReset()V
     .locals 0
 
@@ -287,6 +500,26 @@
     return-void
 .end method
 
+.method public rollbackContentChanged()V
+    .locals 1
+
+    .prologue
+    .line 339
+    .local p0, this:Landroid/support/v4/content/Loader;,"Landroid/support/v4/content/Loader<TD;>;"
+    iget-boolean v0, p0, Landroid/support/v4/content/Loader;->mProcessingChange:Z
+
+    if-eqz v0, :cond_0
+
+    .line 340
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Landroid/support/v4/content/Loader;->mContentChanged:Z
+
+    .line 342
+    :cond_0
+    return-void
+.end method
+
 .method public final startLoading()V
     .locals 2
 
@@ -327,6 +560,31 @@
 
     .line 245
     return-void
+.end method
+
+.method public takeContentChanged()Z
+    .locals 2
+
+    .prologue
+    .line 314
+    .local p0, this:Landroid/support/v4/content/Loader;,"Landroid/support/v4/content/Loader<TD;>;"
+    iget-boolean v0, p0, Landroid/support/v4/content/Loader;->mContentChanged:Z
+
+    .line 315
+    .local v0, res:Z
+    const/4 v1, 0x0
+
+    iput-boolean v1, p0, Landroid/support/v4/content/Loader;->mContentChanged:Z
+
+    .line 316
+    iget-boolean v1, p0, Landroid/support/v4/content/Loader;->mProcessingChange:Z
+
+    or-int/2addr v1, v0
+
+    iput-boolean v1, p0, Landroid/support/v4/content/Loader;->mProcessingChange:Z
+
+    .line 317
+    return v0
 .end method
 
 .method public toString()Ljava/lang/String;
